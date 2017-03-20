@@ -2,47 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a5491d4-5bc5-4984-8208-697a24dab539" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ImageGallery/arrows.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ImageGallery/arrows.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ImageGallery/bullet.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ImageGallery/fullscreen.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ImageGallery/pause.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ImageGallery/play.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ImageGallery/shadow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ImageGallery/triangle.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ImageGallery1/back.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ImageGallery1/borderBottomCenter.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ImageGallery1/borderBottomLeft.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ImageGallery1/borderBottomRight.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ImageGallery1/borderMiddleLeft.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ImageGallery1/borderMiddleRight.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ImageGallery1/borderTopCenter.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ImageGallery1/borderTopLeft.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ImageGallery1/borderTopRight.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ImageGallery1/close.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ImageGallery1/conposit.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ImageGallery1/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ImageGallery1/next.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ImageGallery1/next_ie6.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ImageGallery1/prev.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ImageGallery1/prev_ie6.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ImageGallery/Cinema.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ImageGallery/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ImageGallery/script.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ImageGallery/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ImageGallery/style.mod.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ImageGallery/wowslider.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ImageGallery1/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ImageGallery1/visuallightbox.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ImageGallery1/visuallightbox.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ImageGallery1/vlbdata1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ImageGallery1/vlightbox1.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Scripts/registeration.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ZooWebsite.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Scripts/contactus.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Scripts/login.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ZooWebsite.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Membership.html" afterPath="$PROJECT_DIR$/Membership.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Scripts/registeration.js" afterPath="$PROJECT_DIR$/Scripts/registeration.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contact.html" afterPath="$PROJECT_DIR$/contact.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -58,10 +24,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
+            <state relative-caret-position="221">
               <caret line="24" column="21" lean-forward="false" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
               <folding />
             </state>
@@ -71,9 +37,21 @@
       <file leaf-file-name="Membership.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Membership.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1071">
-              <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+            <state relative-caret-position="308">
+              <caret line="49" column="12" lean-forward="false" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="registeration.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Scripts/registeration.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="572">
+              <caret line="61" column="0" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+              <folding>
+                <element signature="n#!!doc;n#validate#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -124,6 +102,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -169,6 +148,7 @@
         <option value="$PROJECT_DIR$/tickets.html" />
         <option value="$PROJECT_DIR$/contact.html" />
         <option value="$PROJECT_DIR$/Membership.html" />
+        <option value="$PROJECT_DIR$/Scripts/registeration.js" />
       </list>
     </option>
   </component>
@@ -201,22 +181,36 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Zoo Website" />
+              <option name="myItemId" value="Zoo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Zoo Website" />
+              <option name="myItemId" value="Zoo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Zoo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Zoo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Scripts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -713,15 +707,16 @@
       <workItem from="1490015520652" duration="1530000" />
       <workItem from="1490017336136" duration="694000" />
       <workItem from="1490018107034" duration="1168000" />
+      <workItem from="1490040129540" duration="67000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53361000" />
+    <option name="totallyTimeSpent" value="53428000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -737,7 +732,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2408492" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2408492" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -787,13 +782,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/information.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1530">
-          <caret line="90" column="70" lean-forward="false" selection-start-line="90" selection-start-column="70" selection-end-line="90" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tickets.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1581">
@@ -1094,14 +1082,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Membership.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1071">
-          <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/information.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
@@ -1112,9 +1092,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
+        <state relative-caret-position="221">
           <caret line="24" column="21" lean-forward="false" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Membership.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="49" column="12" lean-forward="false" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Scripts/registeration.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="61" column="0" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc;n#validate#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
