@@ -8,26 +8,6 @@
 	<link rel="stylesheet" href="css/style.css" type="text/css" />
 	<title>Menagerine Network</title>
 
-	<script type="text/javascript">
-
-        function Login(){
-
-            if (document.forms.username.value == "") {
-                alert("You must enter a username.");
-                document.forms.username.focus() ;
-                return false;
-            }
-
-            if (document.forms.password.value == "") {
-                alert("You must enter a password.");
-                document.forms.password.focus() ;
-                return false;
-            }
-
-            return true;
-        }
-
-	</script>
 </head>
 <body>
 <div id="page">
@@ -57,57 +37,60 @@
 					<h3><center>And lot's of other services free of charge.</center></h3>
 					<br><hr><br>
 					<h3><em><strong>Sign In</strong></em> <span><em><strong></strong></em></span></h3><br>
-					<form name="forms" method="post" action="index.html" onsubmit="return(Login());">
+
+
+					<script type="text/javascript" src="Scripts/login.js"></script>
+					<form name="Login" onsubmit="return(validate());" method="post"  action="index.html" >
 
 						<em><strong>Username: </strong></em><input type="text" name="Username" id="username" size="10"> &nbsp;&nbsp;
-						&nbsp;&nbsp;&nbsp;<em><strong>Password:</strong></em> <input type="password" name="Password" id="password1" size="10"> &nbsp;&nbsp;
+
+						&nbsp;&nbsp;&nbsp;<em><strong>Password:</strong></em> <input type="password" name="Password1" id="password1" size="10"> &nbsp;&nbsp;
 
 						<input type="submit" value="Sign In">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						<input type="submit" value="Forget Password">
-
 					</form> <br> <hr>
 
 					<span><h3><em><strong>Registration:</strong></em></span>
 
 					<script type="text/javascript" src="Scripts/registeration.js"></script>
-					<form name="Registration" onsubmit="return(validate());" method="post" action="http://webdevbasics.net/scripts/demo.php">
+					<form name="Registration" onsubmit="return(validate());" method="post" action="index.html">
 
 						<table width="500" border="0">
 
 						<tr>
 								<th height="32" scope="row"> <strong>First Name:</strong></th>
-								<td><input type=text name="textnames" id="textname" size="25"></td>
+								<td><input type="text" name="textnames" id="textname" size="20"></td>
 							</tr>
 
 							<tr>
 								<th height="32" scope="row"><em><strong>Last Name:</strong></em></th>
-								<td><input type="text" name="lastname" id="lastname" size="25"></td>
+								<td><input type="text" name="lastname" id="lastname" size="20"></td>
 							</tr>
 
 							<tr>
 							<th height="32" scope="row"><em><strong>Password:</strong></em></th>
-							<td><input type="text" name="password" id="password" size="25"></td>
+							<td><input type="password" name="password" id="password" size="20"></td>
 							</tr>
 
 							<tr>
 								<th height="32" scope="row"><em><strong>House No:</strong></em>:</th>
-								<td><input type="text" name="paddress" id="paddress" size="25"></td>
+								<td><input type="number" name="number1" id="number1" size="20"></td>
 							</tr>
 
 
 							<tr>
 								<th height="32" scope="row"><em><strong>Postcode:</strong></em></th><br>
-								<td><input type="text" name="pincode" id="pincode" size="25"></td><br>
+								<td><input type="text" name="pincode" id="pincode" size="20"></td><br>
 							</tr>
 
 							<tr>
 								<th height="32" scope="row"><em><strong>Email Address: </strong></em></th>
-								<td><input type="text" name="emailid" id="emailid" size="25"></td>
+								<td><input type="text" name="emailid" id="emailid" size="20"></td>
 							</tr>
 
 							<tr>
 								<th height="32" scope="row"><em><strong>Mobile Number: </strong></em></th>
-								<td><input type="text" name="mobileno" id="mobileno" size="25"></td>
+								<td><input type="text" name="mobileno" id="mobileno" size="20"></td>
 							</tr>
 							<tr>
 								<th height="32" scope="row"><input type="reset"></th>
@@ -130,11 +113,11 @@
 					<h2>Meet our Animals</h2>
 					<ul>
 						<li class="first">
-							<a href="gallery.html"><img src="images/ImageGallery/Bear1.jpg" height="100" width="100"alt=""/></a>
+							<a href="gallery.html"><img src="images/ImageGallery/Bear1.jpg" height="100" width="100" alt=""/></a>
 							<a href="gallery.html">Bear</a>
 						</li>
 						<li>
-							<a href="gallery.html"><img src="images/ImageGallery/Hippo.jpg" height="100" width="90"alt=""/></a>
+							<a href="gallery.html"><img src="images/ImageGallery/Hippo.jpg" height="100" width="90" alt=""/></a>
 							<a href="gallery.html">Hippo</a>
 						</li>
 						<li>
