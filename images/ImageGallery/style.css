@@ -94,7 +94,7 @@
 #wowslider-container1 .ws_bullets a { 
 	width:15px;
 	height:15px;
-	background: url(./bullet.png) left top;
+	background: url(bullet.png) left top;
 	float: left; 
 	text-indent: -4000px; 
 	position:relative;
@@ -117,7 +117,7 @@
 	z-index:60;
 	height: 10em;
 	width: 6em;
-	background-image: url(./arrows.png);
+	background-image: url(arrows.png);
 }
 #wowslider-container1 a.ws_next{
 	background-position: 100% 0;
@@ -149,12 +149,12 @@
 
 #wowslider-container1 .ws_pause {
 	background-size: 100%;
-    background-image: url(./pause.png);
+    background-image: url(pause.png);
 }
 
 #wowslider-container1 .ws_play {
 	background-size: 100%;
-    background-image: url(./play.png);
+    background-image: url(play.png);
 }
 
 #wowslider-container1 .ws_pause:hover, #wowslider-container1 .ws_play:hover {
@@ -204,7 +204,7 @@
 @-webkit-keyframes wsBasic{0%{left:-0%} 6.92%{left:-0%} 11.11%{left:-100%} 18.03%{left:-100%} 22.22%{left:-200%} 29.14%{left:-200%} 33.33%{left:-300%} 40.25%{left:-300%} 44.44%{left:-400%} 51.36%{left:-400%} 55.56%{left:-500%} 62.47%{left:-500%} 66.67%{left:-600%} 73.58%{left:-600%} 77.78%{left:-700%} 84.7%{left:-700%} 88.89%{left:-800%} 95.81%{left:-800%} }
 
 #wowslider-container1 .ws_shadow{
-	background: url(./shadow.png) left 100%;
+	background: url(shadow.png) left 100%;
 	background-repeat: no-repeat;
 	background-size:100%;
 	width:100%;
@@ -265,7 +265,7 @@
 	bottom:-11px;
 	margin-left:-5px;
 	left:43px;
-	background:url(./triangle.png);
+	background:url(triangle.png);
 	width:15px;
 	height:6px;
 }
