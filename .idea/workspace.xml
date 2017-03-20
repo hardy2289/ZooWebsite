@@ -194,7 +194,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../INOX CINEMA" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="project.structure.last.edited" value="Problems" />
@@ -690,12 +690,12 @@
       <workItem from="1490015520652" duration="1530000" />
       <workItem from="1490017336136" duration="694000" />
       <workItem from="1490018107034" duration="1168000" />
-      <workItem from="1490040129540" duration="2512000" />
+      <workItem from="1490040129540" duration="2907000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55873000" />
+    <option name="totallyTimeSpent" value="56268000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
