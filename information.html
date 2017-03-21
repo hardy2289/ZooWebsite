@@ -7,6 +7,12 @@
 	<br>
 	<link rel="stylesheet" href="css/style.css" type="text/css" />
 	<title>Menagerine Network</title>
+	<style>
+		#map {
+			height: 400px;
+			width: 50%;
+		}
+	</style>
 </head>
 <body>
 <div id="page">
@@ -26,10 +32,30 @@
 		</ul>
 			</div>
 			<div id="content">
-				<div id="events">
+				<h3>London Zoo </h3>
+				<div id="map">
+					<script>
 
+                        function initMap() {
+                            var uluru = {lat: 51.5357, lng: 0.1557};
+                            var map = new google.maps.Map(document.getElementById('map'), {
+                                zoom: 4,
+                                center: uluru
+                            });
+                            var marker = new google.maps.Marker({
+                                position: uluru,
+                                map: map
+                            });
+                        }
+					</script>
+					<h3>London Zoo </h3>
+					<script async defer
+							src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9hcAhW-iGAaJBGxif6xP6ha3QgDYL3kA&callback=initMap">
+					</script>
 					</div>
 			</div>
+
+
 			<div id="footer">
 				<div>
 					<div>
