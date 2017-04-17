@@ -1,0 +1,33 @@
+
+
+  <h1><center>Hi there!</center></h1>
+  <h2><center>Log-in to access the Zoo Services!</center></h2>
+  <br>
+  <p class="message"
+     ng-show="message"> {{ message }}</p> <br>
+
+
+<section class="card login">
+  <form name="myform" onsubmit="validate()" action="../menageriezoo/Useraccount.html">
+
+
+      <input type="email" name="email" placeholder="Email"
+             ng-model="user.email" ng-required="true">
+      <p class="error validationerror"
+         ng-show="myform.email.$invalid && myform.email.$touched">
+        Must be a valid email</p>
+
+
+      <input type="password" name="password"
+             placeholder="Password"
+             ng-model="user.password"
+             ng-minlength="6">
+      <p class="error validationerror" ng-show="myform.password.$invalid && myform.password.$touched">
+          Password must be at least 6 characters</p>
+
+
+    <button type="submit" class="btn"
+            ng-disabled="myform.$invalid" >Login</button>
+    <p>or <a ng-href="#/register"><b>Register</b>></a></p>
+  </form>
+</section>

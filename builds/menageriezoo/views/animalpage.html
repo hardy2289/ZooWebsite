@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+
+<script src="../js/animal.js"> </script>
+
+<form>
+    <div class="answer1wrap">
+        <select id="mySelect">
+            <option value="void">Select Animal</option>
+
+
+            <option value="Bonobo">Bonobo</option>
+            <option value="Chimpanzee">Chimpanzee</option>
+            <option value="Elephant">Elephant</option>
+            <option value="Horse">Horse</option>
+            <option value="Lion">Lion</option>
+            <option value="Panda">Panda</option>
+            <option value="Penguin">Penguin</option>
+            <option value="Python">Python</option>
+            <option value="Tiger">Tiger</option>
+            <option value="Turtle">Turtle</option>
+        </select>
+
+        <button class="btn btn-default" id="checkbtn" onclick="answers()" type="button">Add Preference</button>
+    </div>
+</form> <br>
+
+<table style="width:100%" border=" 3">
+    <thead>
+    <tr>
+        <td><strong>Original Name</strong></td>
+        <td><strong>Latin Name</strong></td>
+        <td><strong>Order</strong></td>
+        <td><strong>Family </strong></td>
+        <td><strong>Species</strong> </td>
+        <td><strong>Genus</strong> </td>
+    </tr>
+    </thead>
+    <tbody id="table_body">
+
+    </tbody>
+</table>
+
+
+<!--
+
+<table style="width:100%" border=" 3">
+    <thead>
+    <tr>
+        <td><strong>Address</strong></td>
+        <td><strong>Phone Number</strong></td>
+        <td><strong>Opening Time</strong></td>
+
+    </tr>
+    </thead>
+    <tbody id="table_body1">
+
+    </tbody>
+</table>
+
+ -->
+
+
+
+
+<script src="https://www.gstatic.com/firebasejs/3.7.8/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyAGOAeE7W8gWftPStV2nf4PwYyaEuxERNk",
+        authDomain: "animalinformation-cd765.firebaseapp.com",
+        databaseURL: "https://animalinformation-cd765.firebaseio.com",
+        projectId: "animalinformation-cd765",
+        storageBucket: "animalinformation-cd765.appspot.com",
+        messagingSenderId: "843766532952"
+    };
+    firebase.initializeApp(config);
+</script>
+
+<script src=" https://code.jquery.com/jquery-3.1.0.js"> </script>
+
+
+</body>
+</html>
