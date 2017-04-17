@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html ng-app="myApp">
+<head>
+
+
+	<br>
+	<link rel="stylesheet" href="../../css/style.css" type="text/css" />
+	<title>Menagerie Network</title>
+
+
+	<meta charset="UTF-8">
+	<title>Angular Registration</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,100,700,900' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="js/lib/angular/angular.min.js"></script>
+	<script src="js/lib/angular/angular-route.min.js"></script>
+	<script src="js/lib/angular/angular-animate.min.js"></script>
+
+
+
+	<script src="https://www.gstatic.com/firebasejs/3.7.5/firebase.js"></script>
+	<script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyBaqMEGCEgVSwMm79CO_vc-Lw9z_7QEP6U",
+            authDomain: "menageriezoo.firebaseapp.com",
+            databaseURL: "https://menageriezoo.firebaseio.com",
+            projectId: "menageriezoo",
+            storageBucket: "menageriezoo.appspot.com",
+            messagingSenderId: "996713461195"
+        };
+        firebase.initializeApp(config);
+	</script>
+	<script src="https://cdn.firebase.com/libs/angularfire/2.1.0/angularfire.min.js"></script>
+
+
+
+	<script src="js/app.js"></script>
+	<script src="js/services/authentication.js"></script>
+	<script src="js/controllers/registration.js"></script>
+	<script src="js/controllers/success.js"></script>
+</head>
+<body>
+<div id="page">
+	<div id="header">
+
+		<a href="../../index.html">Menagerie Network Zoo's</a>
+		<ul id="navigation">
+
+			<li id="link1"><a href="../../index.html">Home</a></li>
+			<li id="link2" class="selected"><a href="Membership.html">Membership</a></li>
+			<li id="link3"><a href="Planatrip.html">Plan a Trip</a></li>
+			<li id="link4"><a href="tickets.html">Tickets</a></li>
+			<li id="link6"><a href="gallery.html">Gallery</a></li>
+			<li id="link5"><a href="information.html">Information</a></li>
+			<li id="link7"><a href="contact.html">Contact Us</a></li>
+		</ul>
+
+	</div>
+			<div id="content">
+				<div id="zoo">
+					<h1><center>Benefits of Membership</center></h1>
+					<h3><center>Free admisiion to zoo though full year in all zoo's of Manageriene Network.</center></h3>
+					<h3><center> Guest can join you at discounted prize.</center></h3>
+					<h3><center>Food and Drinks can be purchase at Discounted Prize.</center></h3>
+					<h3><center>Discounts on Zoo Train and Carousel rides.</center></h3>
+					<h3><center>Discounts on Gift Shop Merchandise and More</center></h3>
+					<h3><center>And lot's of other services free of charge.</center></h3>
+					<br><hr>
+
+
+
+				<div class="page">
+
+					<div class="userinfo" ng-show="currentUser" ng-controller="RegistrationController">
+						<!-- <span class="userinfo">Hi {{currentUser.firstname}}</span>
+						<a ng-href="#/login" ng-click="logout()">logout</a>  -->
+					</div>
+
+					<main class="cf" ng-view>
+					</main>
+				</div>
+
+				</div>
+
+				<br>
+				<div class="featured">
+
+					<h2>Meet our Animals</h2>
+					<ul>
+						<li class="first">
+							<a href="gallery.html"><img src="../../images/ImageGallery2/Bear1.jpg" height="100" width="100" alt=""/></a>
+							<a href="gallery.html">Bear</a>
+						</li>
+						<li>
+							<a href="gallery.html"><img src="../../images/ImageGallery2/Hippo.jpg" height="100" width="90" alt=""/></a>
+							<a href="gallery.html">Hippo</a>
+						</li>
+						<li>
+							<a href="gallery.html"><img src="../../images/ImageGallery2/Elephant.jpeg" height="100" width="90" alt=""/></a>
+							<a href="gallery.html">Elephant</a>
+						</li>
+						<li>
+							<a href="gallery.html"><img src="../../images/ImageGallery2/Giraffe.jpeg" height="100" width="90" alt=""/></a>
+							<a href="gallery.html">Giraffe</a>
+						</li>
+						<li>
+							<a href="gallery.html"><img src="../../images/ImageGallery2/Lion.jpeg" height="100" width="90" alt=""/></a>
+							<a href="gallery.html">Lion</a>
+						</li>
+						<li>
+							<a href="gallery.html"><img src="../../images/ImageGallery2/Monkey.jpeg" height="100" width="90" alt=""/></a>
+							<a href="gallery.html">Monkey</a>
+						</li>
+						<li>
+							<a href="gallery.html"><img src="../../images/ImageGallery2/Panda.jpeg" height="100" width="90" alt=""/></a>
+							<a href="gallery.html">Panda</a>
+						</li>
+						<li class="last">
+							<a href="gallery.html"><img src="../../images/button-view-gallery2.jpg" height="100" width="100" alt=""/></a>
+							<a href="gallery.html">View Gallery</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="footer">
+				<div>
+				<div>
+					<p><b>Menagerie Network Zoos Limited</b> Located in  London</p>
+					<span>02085885421/ 02074185212</span>
+					<span>info@menagerienetwork.com</span>
+				</div>
+
+				<ul class="navigation">
+					<li ><a href="../../index.html"><b>Home</b></a></li>
+				</ul>
+
+				<ul class="navigation">
+					<li ><a href="Membership.html"><b>Membership</b></a></li>
+				</ul>
+
+				<ul class="navigation">
+					<li ><a href="Planatrip.html"><b>Plan a Trip</b></a></li>
+				</ul>
+
+				<ul class="navigation">
+					<li ><a href="tickets.html"><b>Tickets</b></a></li>
+				</ul>
+
+				<ul class="navigation">
+					<li ><a href="gallery.html"><b>Gallery</b></a></li>
+				</ul>
+
+				<ul class="navigation">
+					<li ><a href="information.html"><b>Information</b></a></li>
+
+				</ul>
+
+				<br><br><br><br>
+
+				<p>Copyright &#169; 2017. All Rights Reserved.</p>
+				</div>
+			</div>
+	<script src="../../Scripts/lib/angular/angular.min.js"></script>
+	</div>
+	</body>
+</html>  
