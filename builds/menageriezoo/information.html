@@ -7,13 +7,56 @@
 	<br>
 	<link rel="stylesheet" href="../../css/style.css" type="text/css" />
 	<title>Menagerie Network</title>
-	<style>
-		#map {
-			height: 400px;
-			width: 50%;
-		}
-	</style>
-</head>
+	<script src="js/lib/angular/angular.min.js"></script>
+	<script src="js/lib/angular/angular-route.min.js"></script>
+	<script src="js/lib/angular/angular-animate.min.js"></script>
+
+
+
+	<script src="https://www.gstatic.com/firebasejs/3.7.8/firebase.js"></script>
+	<script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyAGOAeE7W8gWftPStV2nf4PwYyaEuxERNk",
+            authDomain: "animalinformation-cd765.firebaseapp.com",
+            databaseURL: "https://animalinformation-cd765.firebaseio.com",
+            projectId: "animalinformation-cd765",
+            storageBucket: "animalinformation-cd765.appspot.com",
+            messagingSenderId: "843766532952"
+        };
+        firebase.initializeApp(config);
+	</script>
+
+	<script src=" https://code.jquery.com/jquery-3.1.0.js"> </script>
+	<script src="https://cdn.firebase.com/libs/angularfire/2.1.0/angularfire.min.js"></script>
+	<script src="js/information.js"></script>
+
+	<script>
+        function myFunction() {
+            var x = document.createElement("IMG");
+            x.setAttribute("src", "../../images/ImageGallery2/Chimpanzee1.jpg");
+            x.setAttribute("width", "95");
+            x.setAttribute("height", "95");
+            document.body.appendChild(x);
+        }
+		</script>
+	<script>
+        function searchSel()
+        {
+            var input = document.getElementById('realtxt').value.toLowerCase();
+
+            len = input.length;
+            output = document.getElementById('mySelect').options;
+            for(var i=0; i<output.length; i++)
+                if (output[i].text.toLowerCase().indexOf(input) != -1 ){
+                    output[i].selected = true;
+                    break;
+                }
+            if (input == '')
+                output[0].selected = true;
+        }
+	</script>
+	</head>
 <body>
 <div id="page">
 	<div id="header">
@@ -22,37 +65,82 @@
 		<ul id="navigation">
 
 			<li id="link1"><a href="../../index.html">Home</a></li>
-			<li id="link2" ><a href="Membership.html">Membership</a></li>
+			<li id="link2"><a href="Membership.html">Membership</a></li>
 			<li id="link3"><a href="Planatrip.html">Plan a Trip</a></li>
-			<li id="link4"><a href="tickets.html">Tickets</a></li>
+			<li id="link4" class="selected"><a href="information.html">Info</a></li>
+			<li id="link5"><a href="Navigation.html">Navigation</a></li>
+			<li id="link6" ><a href="gallery.html">Gallery</a></li>
+			<li id="link7" ><a href="contact.html">Contact Us</a></li>
 
-			<li id="link6"><a href="gallery.html">Gallery</a></li>
-			<li id="link5" class="selected"><a href="information.html">Information</a></li>
-			<li id="link7"><a href="contact.html">Contact Us</a></li>
+
+
 		</ul>
 			</div>
 			<div id="content">
-				<h3>London Zoo </h3>
-				<div id="map">
-					<script>
 
-                        function initMap() {
-                            var uluru = {lat: 51.5357, lng: 0.1557};
-                            var map = new google.maps.Map(document.getElementById('map'), {
-                                zoom: 4,
-                                center: uluru
-                            });
-                            var marker = new google.maps.Marker({
-                                position: uluru,
-                                map: map
-                            });
-                        }
-					</script>
-					<h3>London Zoo </h3>
-					<script async defer
-							src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9hcAhW-iGAaJBGxif6xP6ha3QgDYL3kA&callback=initMap">
-					</script>
-					</div>
+				<div id ="info">
+				<h1> <center>Welcome to Animal Information Page </center> </h1>
+				<hr><br>
+					<h2><u> Search Animal </u></h2><br><br>
+
+
+
+
+					<h3>Search Animal by their Original or Latin name:  </h3>
+
+					<form>
+						<div class="answer1wrap">
+
+							Search <input type="text" id="realtxt" onkeyup="searchSel()">
+							<select id="mySelect">
+
+								<option value="void">Select Animal</option>
+								<option value="Bonobo">Bonobo</option>
+								<option value="Chimpanzee">Chimpanzee</option>
+								<option value="Elephnat">Elephant</option>
+								<option value="Horse">Horse</option>
+								<option value="Lion">Lion</option>
+								<option value="Panda">Panda</option>
+								<option value="Penguin">Penguin</option>
+								<option value="Python">Python</option>
+								<option value="Tiger">Tiger</option>
+								<option value="Turtle">Turtle</option>
+							</select>
+							<button class="btn btn-default" id="checkbtn" onclick="answers()" type="button">Search</button>
+						</div>
+					</form> <br><br>
+
+					<table id="table" class="gridtable" style="width:100%" border=" 3" >
+						<thead>
+						<tr>
+							<td><strong>Animal Description</strong></td>
+							<td><strong>Animal Image</strong></td>
+						</tr>
+						</thead>
+						<tbody id="table_body1">
+
+						</tbody>
+					</table>
+					<table id="table" class="gridtable" style="width:100%" border=" 3" >
+						<thead>
+						<tr>
+							<td><strong>Original Name</strong></td>
+							<td><strong>Latin Name</strong></td>
+							<td><strong>Order</strong></td>
+							<td><strong>Family </strong></td>
+							<td><strong>Species</strong> </td>
+							<td><strong>Genus</strong> </td>
+						</tr>
+						</thead>
+						<tbody id="table_body">
+
+						</tbody>
+					</table>
+
+
+
+
+				</div>
 			</div>
 
 
@@ -65,28 +153,28 @@
 					</div>
 
 					<ul class="navigation">
-						<li ><a href="../../index.html"><b>Home</b></a></li>
+						<li ><a href="index.html"><b>Home</b></a></li>
 					</ul>
 
 					<ul class="navigation">
-						<li ><a href="Membership.html"><b>Membership</b></a></li>
+						<li ><a href="builds/menageriezoo/Membership.html"><b>Membership</b></a></li>
 					</ul>
 
 					<ul class="navigation">
-						<li ><a href="Planatrip.html"><b>Plan a Trip</b></a></li>
+						<li ><a href="builds/menageriezoo/Planatrip.html"><b>Plan a Trip</b></a></li>
 					</ul>
 
 					<ul class="navigation">
-						<li ><a href="tickets.html"><b>Tickets</b></a></li>
+						<li ><a href="builds/menageriezoo/information.html"><b>Information</b></a></li>
+
 					</ul>
 
 					<ul class="navigation">
-						<li ><a href="gallery.html"><b>Gallery</b></a></li>
+						<li ><a href="builds/menageriezoo/Navigation.html"><b>Navigation</b></a></li>
 					</ul>
 
 					<ul class="navigation">
-						<li ><a href="information.html"><b>Information</b></a></li>
-
+						<li ><a href="builds/menageriezoo/gallery.html"><b>Gallery</b></a></li>
 					</ul>
 
 					<br><br><br><br>

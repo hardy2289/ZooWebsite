@@ -922,7 +922,7 @@ a#twitter{
 }
 #content div#info{
 	float: none;
-    height: 713px;
+    height: auto;
     padding: 0 35px;
 }
 #content div#info p{

@@ -5,12 +5,16 @@
 
 // Initialize Firebase
 
+
+
 function answers() {
     var answer = document.getElementById("mySelect");
 
     if (answer[answer.selectedIndex].value == "Bonobo") {
 
         var rootRef = firebase.database().ref().child("Bonobo");
+
+
 
         rootRef.on("child_added", snap => {
             var originalname = snap.child("originalname").val();
@@ -19,10 +23,18 @@ function answers() {
             var family = snap.child("family").val();
             var genus = snap.child("genus").val();
             var species = snap.child("species").val();
-           //var description = snap.child("description").val();
+            var description = snap.child("description").val();
 
 
+
+                var x = document.createElement("IMG");
+                x.setAttribute("src", "js/elephant.jpg");
+                document.body.appendChild(x);
+
+
+            $("#table_body1").append("<tr><td>" + description + "</td><td>"+x+"</td><tr>")
             $("#table_body").append("<tr><td>" + originalname + "</td><td>" + latinname + "</td><td>" + order1 + "</td><td>" + family + "</td><td>" + genus + "</td><td>" + species + "</td></tr>")
+
         });
     }
 
@@ -37,9 +49,17 @@ function answers() {
             var family = snap.child("family").val();
             var genus = snap.child("genus").val();
             var species = snap.child("species").val();
-           // var description = snap.child("description").val();
+            // var description = snap.child("description").val();
+            var description = snap.child("description").val();
+            //var x = document.createElement("IMG");
 
 
+            var x = document.createElement("IMG");
+            x.setAttribute("src", "js/elephant.jpg");
+            document.body.appendChild(x);
+
+
+            $("#table_body1").append("<tr><td>" + description + "</td><td>"+x+"</td><tr>")
             $("#table_body").append("<tr><td>" + originalname + "</td><td>" + latinname + "</td><td>" + order1 + "</td><td>" + family + "</td><td>" + genus + "</td><td>" + species + "</td></tr>")
         });
     }
@@ -55,9 +75,13 @@ function answers() {
             var family = snap.child("family").val();
             var genus = snap.child("genus").val();
             var species = snap.child("species").val();
-           // var description = snap.child("description").val();
+            var description = snap.child("description").val();
 
+            var x = document.createElement("IMG");
+            x.setAttribute("src", "js/elephant.jpg");
+            document.body.appendChild(x);
 
+            $("#table_body1").append("<tr><td>" + description + "</td><td>"+x+"</td><tr>")
             $("#table_body").append("<tr><td>" + originalname + "</td><td>" + latinname + "</td><td>" + order1 + "</td><td>" + family + "</td><td>" + genus + "</td><td>" + species + "</td></tr>")
         });
     }
@@ -72,9 +96,13 @@ function answers() {
             var family = snap.child("family").val();
             var genus = snap.child("genus").val();
             var species = snap.child("species").val();
-           // var description = snap.child("description").val();
+            var description = snap.child("description").val();
 
+            var x = document.createElement("IMG");
+            x.setAttribute("src", "js/elephant.jpg");
+            document.body.appendChild(x);
 
+            $("#table_body1").append("<tr><td>" + description + "</td><td>"+x+"</td><tr>")
             $("#table_body").append("<tr><td>" + originalname + "</td><td>" + latinname + "</td><td>" + order1 + "</td><td>" + family + "</td><td>" + genus + "</td><td>" + species + "</td></tr>")
         });
     }
@@ -90,7 +118,13 @@ function answers() {
             var family = snap.child("family").val();
             var genus = snap.child("genus").val();
             var species = snap.child("species").val();
-            //var description = snap.child("description").val();
+            var description = snap.child("description").val();
+
+            var x = document.createElement("IMG");
+            x.setAttribute("src", "js/elephant.jpg");
+            document.body.appendChild(x);
+
+            $("#table_body1").append("<tr><td>" + description + "</td><td>"+x+"</td><tr>")
 
 
             $("#table_body").append("<tr><td>" + originalname + "</td><td>" + latinname + "</td><td>" + order1 + "</td><td>" + family + "</td><td>" + genus + "</td><td>" + species + "</td></tr>")
@@ -108,8 +142,13 @@ function answers() {
             var family = snap.child("family").val();
             var genus = snap.child("genus").val();
             var species = snap.child("species").val();
-           // var description = snap.child("description").val();
+            var description = snap.child("description").val();
 
+            var x = document.createElement("IMG");
+            x.setAttribute("src", "js/elephant.jpg");
+            document.body.appendChild(x);
+
+            $("#table_body1").append("<tr><td>" + description + "</td><td>"+x+"</td><tr>")
 
             $("#table_body").append("<tr><td>" + originalname + "</td><td>" + latinname + "</td><td>" + order1 + "</td><td>" + family + "</td><td>" + genus + "</td><td>" + species + "</td></tr>")
         });
@@ -126,7 +165,13 @@ function answers() {
             var family = snap.child("family").val();
             var genus = snap.child("genus").val();
             var species = snap.child("species").val();
-            //var description = snap.child("description").val();
+            var description = snap.child("description").val();
+
+            var x = document.createElement("IMG");
+            x.setAttribute("src", "js/elephant.jpg");
+            document.body.appendChild(x);
+
+            $("#table_body1").append("<tr><td>" + description + "</td><td>"+x+"</td><tr>")
 
 
             $("#table_body").append("<tr><td>" + originalname + "</td><td>" + latinname + "</td><td>" + order1 + "</td><td>" + family + "</td><td>" + genus + "</td><td>" + species + "</td></tr>")
@@ -144,7 +189,13 @@ function answers() {
             var family = snap.child("family").val();
             var genus = snap.child("genus").val();
             var species = snap.child("species").val();
-            //var description = snap.child("description").val();
+            var description = snap.child("description").val();
+
+            var x = document.createElement("IMG");
+            x.setAttribute("src", "js/elephant.jpg");
+            document.body.appendChild(x);
+
+            $("#table_body1").append("<tr><td>" + description + "</td><td>"+x+"</td><tr>")
 
 
             $("#table_body").append("<tr><td>" + originalname + "</td><td>" + latinname + "</td><td>" + order1 + "</td><td>" + family + "</td><td>" + genus + "</td><td>" + species + "</td></tr>")
@@ -162,7 +213,13 @@ function answers() {
             var family = snap.child("family").val();
             var genus = snap.child("genus").val();
             var species = snap.child("species").val();
-           // var description = snap.child("description").val();
+            var description = snap.child("description").val();
+
+            var x = document.createElement("IMG");
+            x.setAttribute("src", "js/elephant.jpg");
+            document.body.appendChild(x);
+
+            $("#table_body1").append("<tr><td>" + description + "</td><td>"+x+"</td><tr>")
 
 
             $("#table_body").append("<tr><td>" + originalname + "</td><td>" + latinname + "</td><td>" + order1 + "</td><td>" + family + "</td><td>" + genus + "</td><td>" + species + "</td></tr>")
@@ -180,25 +237,20 @@ function answers() {
             var family = snap.child("family").val();
             var genus = snap.child("genus").val();
             var species = snap.child("species").val();
-            //var description = snap.child("description").val();
+            var description = snap.child("description").val();
+
+            var x = document.createElement("IMG");
+            x.setAttribute("src", "js/elephant.jpg");
+            document.body.appendChild(x);
+
+            $("#table_body1").append("<tr><td>" + description + "</td><td>"+x+"</td><tr>")
 
 
             $("#table_body").append("<tr><td>" + originalname + "</td><td>" + latinname + "</td><td>" + order1 + "</td><td>" + family + "</td><td>" + genus + "</td><td>" + species + "</td></tr>")
         });
     }
 
-    else if (answer[answer.selectedIndex].value = "") {
 
-        function clicker1() {
-            ss.innerHTML = "Please Select an Animal";
-            setTimeout("kk()",3000);
-        }
-        function kk(){
-            document.forms[0].submit();
-
-        }
-
-    }
 
 }
 
