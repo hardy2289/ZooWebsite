@@ -1,0 +1,30 @@
+<script src="https://www.gstatic.com/firebasejs/3.7.6/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.7.6/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.7.6/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.7.6/firebase-messaging.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyAGOAeE7W8gWftPStV2nf4PwYyaEuxERNk",
+        authDomain: "animalinformation-cd765.firebaseapp.com",
+        databaseURL: "https://animalinformation-cd765.firebaseio.com",
+        projectId: "animalinformation-cd765",
+        storageBucket: "animalinformation-cd765.appspot.com",
+        messagingSenderId: "843766532952"
+    };
+    firebase.initializeApp(config);
+</script>
+
+
+<script>
+var ref=new Firebase("https://animalinformation-cd765.firebaseio.com/Bonobo/Bonobo").once('value', show);
+
+function show(snap) {
+$('pre').text(JSON.stringify(snap.val(), null));
+}
+
+</script>
+
+
+<h3>SELECT * FROM user WHERE id = 123;</h3>
+<pre>?</pre>
