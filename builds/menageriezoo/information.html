@@ -48,7 +48,7 @@
             len = input.length;
             output = document.getElementById('mySelect').options;
             for(var i=0; i<output.length; i++)
-                if (output[i].text.toLowerCase().indexOf(input) != -1 ){
+                if (output[i].text.ignoreCase().indexOf(input) != -1 ){
                     output[i].selected = true;
                     break;
                 }
@@ -90,25 +90,12 @@
 
 					<form>
 						<div class="answer1wrap">
-
-							Search <input type="text" id="realtxt" onkeyup="searchSel()">
-							<select id="mySelect">
-
-								<option value="void">Select Animal</option>
-								<option value="Bonobo">Bonobo</option>
-								<option value="Chimpanzee">Chimpanzee</option>
-								<option value="Elephnat">Elephant</option>
-								<option value="Horse">Horse</option>
-								<option value="Lion">Lion</option>
-								<option value="Panda">Panda</option>
-								<option value="Penguin">Penguin</option>
-								<option value="Python">Python</option>
-								<option value="Tiger">Tiger</option>
-								<option value="Turtle">Turtle</option>
-							</select>
+							Search <input type="text" id="myInput">
 							<button class="btn btn-default" id="checkbtn" onclick="answers()" type="button">Search</button>
 						</div>
 					</form> <br><br>
+
+
 
 					<table id="table" class="gridtable" style="width:100%" border=" 3" >
 						<thead>
@@ -121,6 +108,7 @@
 
 						</tbody>
 					</table>
+
 					<table id="table" class="gridtable" style="width:100%" border=" 3" >
 						<thead>
 						<tr>

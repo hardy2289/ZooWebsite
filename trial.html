@@ -1,30 +1,73 @@
-<script src="https://www.gstatic.com/firebasejs/3.7.6/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/3.7.6/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/3.7.6/firebase-database.js"></script>
-<script src="https://www.gstatic.com/firebasejs/3.7.6/firebase-messaging.js"></script>
-<script>
-    // Initialize Firebase
-    var config = {
-        apiKey: "AIzaSyAGOAeE7W8gWftPStV2nf4PwYyaEuxERNk",
-        authDomain: "animalinformation-cd765.firebaseapp.com",
-        databaseURL: "https://animalinformation-cd765.firebaseio.com",
-        projectId: "animalinformation-cd765",
-        storageBucket: "animalinformation-cd765.appspot.com",
-        messagingSenderId: "843766532952"
-    };
-    firebase.initializeApp(config);
-</script>
+<!DOCTYPE html>
+
+<html>
+<head>
 
 
-<script>
-var ref=new Firebase("https://animalinformation-cd765.firebaseio.com/Bonobo/Bonobo").once('value', show);
-
-function show(snap) {
-$('pre').text(JSON.stringify(snap.val(), null));
-}
-
-</script>
+    <br>
 
 
-<h3>SELECT * FROM user WHERE id = 123;</h3>
-<pre>?</pre>
+
+
+    <script src="https://www.gstatic.com/firebasejs/3.7.8/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyAGOAeE7W8gWftPStV2nf4PwYyaEuxERNk",
+            authDomain: "animalinformation-cd765.firebaseapp.com",
+            databaseURL: "https://animalinformation-cd765.firebaseio.com",
+            projectId: "animalinformation-cd765",
+            storageBucket: "animalinformation-cd765.appspot.com",
+            messagingSenderId: "843766532952"
+        };
+        firebase.initializeApp(config);
+    </script>
+
+    <script src=" https://code.jquery.com/jquery-3.1.0.js"> </script>
+    <script src="https://cdn.firebase.com/libs/angularfire/2.1.0/angularfire.min.js"></script>
+
+
+    <script src="builds/menageriezoo/js/trial.js"></script>
+</head>
+<body>
+<div id="page">
+    <div id="header">
+        Search <input type="text" id="myInput">
+        <button class="btn btn-default" id="checkbtn" onclick="answers()" type="button">Search</button>
+
+        <table id="table" class="gridtable" style="width:100%" border=" 3" >
+            <thead>
+            <tr>
+                <td><strong>Animal Description</strong></td>
+                <td><strong>Animal Image</strong></td>
+            </tr>
+            </thead>
+            <tbody id="table_body1">
+
+            </tbody>
+        </table>
+
+        <table id="table" class="gridtable" style="width:100%" border=" 3" >
+            <thead>
+            <tr>
+                <td><strong>Original Name</strong></td>
+                <td><strong>Latin Name</strong></td>
+                <td><strong>Order</strong></td>
+                <td><strong>Family </strong></td>
+                <td><strong>Species</strong> </td>
+                <td><strong>Genus</strong> </td>
+            </tr>
+            </thead>
+            <tbody id="table_body">
+
+            </tbody>
+        </table>
+
+
+
+    </div>
+
+
+</div>
+</body>
+</html>
