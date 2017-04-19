@@ -1,0 +1,125 @@
+
+<style>
+
+    #map {
+        height: 400px;
+        width:400px
+    }
+
+    #floating-panel {
+        position: absolute;
+        top: 400px;
+        left: 25%;
+        z-index: 5;
+        background-color: #fff;
+        padding: 5px;
+        border: 1px solid #999;
+        text-align: center;
+        font-family: 'Roboto','sans-serif';
+        line-height: 30px;
+        padding-left: 10px;
+    }
+</style>
+
+
+
+<div id="map"></div>
+<script>
+    // zoo array to hold zoo database stored in view bag
+    var zoos = [];
+</script>
+
+
+
+<script>
+    zoos.push({"Name":'@zoo',"Link":'@link',"lat":@lat,"lng":@lon,"Post":"'@post_code'"});
+</script>
+
+}
+
+<script>
+    var infowindow=[] ;
+
+    var markers = [];
+    function initMap() {
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+            center: { lat: 53.81625, lng: -3.011161 },
+            zoom: 6
+
+        });
+
+        //     debugger;
+        drop();
+
+
+        function clearMarkers() {
+            for (var i = 0; i < markers.length; i++) {
+                markers[i].setMap(null);
+            }
+            markers = [];
+        }
+
+        function drop() {
+            clearMarkers();
+
+            for (var i = 0; i < zoos.length; i++) {
+                // construct window string
+                var str = zoos[i].Name + "<br>" +" <a href=" + zoos[i].Link + ">" +
+                    zoos[i].Link+"</a> <br>" +
+                    zoos[i].lat + "<br>" +
+                    zoos[i].lng + "<br>" +
+                    zoos[i].Post;
+                infowindow[i] = new google.maps.InfoWindow({
+                    content: str,
+                    maxWidth: 200
+                });
+                addMarkerWithTimeout(i, zoos[i], i * 200);
+
+
+            }
+        }
+
+        function addMarkerWithTimeout(index,position, timeout) {
+            window.setTimeout(
+                function () {
+                    markers[index] = new google.maps.Marker(
+                        {
+                            position: position,
+                            map: map,
+                            flat: true,
+                            draggable: false,
+                            animation: google.maps.Animation.DROP
+
+                        }
+
+                    )
+
+
+                    markers.push(markers[index], timeout);
+                    google.maps.event.addListener(markers[index], 'click', function () {
+                        // close other markers
+                        for (var i = 0; i < zoos.length; i++)
+                        {
+                            infowindow[i].close();
+                        }
+                        //
+                        infowindow[index].open(map, markers[index]);
+                        //time out on window
+                        setTimeout(function () { infowindow[index].close(); }, 5000);
+                    });
+
+
+
+                }
+            )
+        }
+    }
+</script>
+
+
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2UCSfmxUUHGql9s53OX1z4hwu8zvgL5w&callback=initMap">
+</script>
+
+

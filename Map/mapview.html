@@ -1,0 +1,75 @@
+<html>
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6.2" type="text/javascript"></script>
+    <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+    <script>
+        var map = null;
+        var route = null;
+        var routeType = null;
+
+        function GetMap()
+        {
+            map = new VEMap('myMap');
+            map.LoadMap();
+        }
+
+        function GetRoute()
+        {
+            if (typeForm.routeType[0].checked)
+            {
+                routeType = VERouteType.Quickest;
+            }
+
+            else if (typeForm.routeType[1].checked)
+            {
+                routeType = VERouteType.Shortest;
+            }
+            route = map.GetRoute(txtStart.value, txtEnd.value, VEDistanceUnit.Miles, routeType, myCallback());
+        }
+
+
+        function DeleteRoute()
+        {
+            map.DeleteRoute();
+        }
+
+        function myCallback()
+        {
+            alert("The callback function has been called.");
+        }
+
+        function ShowDisambiguationDialog(v)
+        {
+            map.ShowDisambiguationDialog(v);
+        }
+    </script>
+</head>
+<body onload="GetMap();" style="font-family:Arial">
+<div id='myMap' style="position:relative; width:400px; height:400px;"></div>
+<p>
+    Start: <input id="txtStart" type="text" value="Carson" name="txtStart" /><br />
+    End: <input id="txtEnd" type="text" value="Area 51" name="txtEnd" />
+</p>
+<form name="typeForm">
+    Route Type:<br />
+    <input id="typequickest" type="radio" name="routeType"
+           checked="checked" /> Quickest<br >
+    <input id="typeshortest" type="radio" name="routeType" /> Shortest
+</form>
+<form id="disamb">
+    Disambiguation Dialog<br />
+    <input name="showDisamb" type="radio"
+           onclick="ShowDisambiguationDialog(1)" checked="checked" />Show<br />
+    <input name="showDisamb" type="radio"
+           onclick="ShowDisambiguationDialog(0)" />Do Not Show
+</form>
+<input id="getroute" type="button" value="Get Route" onclick="GetRoute();" />
+<input id="deleteroute" type="button" value="Delete Route" onclick="DeleteRoute();" />
+</body>
+</html>
+
+

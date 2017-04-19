@@ -12,6 +12,7 @@ function answers() {
 
         var rootRef = firebase.database().ref().child("Chimpanzee");
 
+
         rootRef.on("child_added", snap => {
             var originalname = snap.child("originalname").val();
             var latinname = snap.child("latinname").val();
@@ -21,14 +22,29 @@ function answers() {
             var species = snap.child("species").val();
             var description = snap.child("description").val();
             var zoo=snap.child("zoo").val();
+            var numbers=snap.child("numbers").val();
+            var continent=snap.child("continent").val();
+            var country=snap.child("country").val();
+
+
+            var root=firebase.database().ref().child("Battersea");
+            root.on("child_added", snap=>{
+                var address=snap.child("address").val();
+                var phoneno=snap.child("phoneno").val();
+                var time=snap.child("time").val();
 
     var firstRow = document.getElementById("table").rows[0];
-    var x = firstRow.insertCell(+2);
-    x.innerHTML = "<img src='../../Images/Thumbnails/Chimpanzee1.jpg' height='120' width='120' alt='hello'/>";
+    var x = firstRow.insertCell(+3);
+    x.innerHTML = "<img src='http://images.nationalgeographic.com/wpf/media-live/photos/000/007/cache/young-chimp_763_600x450.jpg' height='120' width='120' alt='hello'/>";
 
-            $("#table_body1").append("<tr><td>" + description + "</td><td>"+ zoo+"</td><td>"+"Chimpanzee Image" +"</td><tr>")
+            $("#table_body1").append("<tr><td>" + description + "</td><td>"+ continent+"</td><td>"+ country+"</td><td>"+"Chimpanzee Image" +"</td><tr>")
             $("#table_body").append("<tr><td>" + originalname + "</td><td>" + latinname + "</td><td>" + order1 + "</td><td>" + family + "</td><td>" + genus + "</td><td>" + species + "</td></tr>")
+            $("#table_body2").append("<tr><td>" + address + "</td><td>" + phoneno + "</td><td>" + time + "</td><td>" + numbers + "</td><tr>")
         });
+
+
+        })
+
     }
 
     else if ((((answer.value =="Bonobo" || answer.value == "bonobo" )|| (answer.value =="Pan Paniscus"  || answer.value == "pan paniscus"))||((answer.value =="primates" || answer.value == "Primates" )|| (answer.value =="Paniscus"  || answer.value == "paniscus")))
@@ -47,12 +63,26 @@ function answers() {
             var description = snap.child("description").val();
             var zoo=snap.child("zoo").val();
 
-            var firstRow = document.getElementById("table").rows[0];
-            var x = firstRow.insertCell(+2);
-            x.innerHTML = "<img src='../../Images/Thumbnails/Bonobo1.jpeg' height='120' width='120' alt='hello'/>";
+            var numbers=snap.child("numbers").val();
+            var continent=snap.child("continent").val();
+            var country=snap.child("country").val();
 
-            $("#table_body1").append("<tr><td>" + description + "</td><td>"+ zoo+"</td><td>"+"Bonobo Image" +"</td><tr>")
+
+            var root=firebase.database().ref().child("London");
+            root.on("child_added", snap=>{
+                var address=snap.child("address").val();
+                var phoneno=snap.child("phoneno").val();
+                var time=snap.child("time").val();
+
+            var firstRow = document.getElementById("table").rows[0];
+            var x = firstRow.insertCell(+3);
+            x.innerHTML = "<img src='http://animals.sandiegozoo.org/sites/default/files/2016-10/bonobo_portrait.jpg' height='120' width='120' alt='hello'/>";
+
+            $("#table_body1").append("<tr><td>" + description + "</td><td>"+ continent+"</td><td>"+ country+"</td><td>"+"Bonobo Image" +"</td><tr>")
             $("#table_body").append("<tr><td>" + originalname + "</td><td>" + latinname + "</td><td>" + order1 + "</td><td>" + family + "</td><td>" + genus + "</td><td>" + species + "</td></tr>")
+                $("#table_body2").append("<tr><td>" + address + "</td><td>" + phoneno + "</td><td>" + time + "</td><td>" + numbers + "</td><tr>")
+            });
+
         });
     }
 
@@ -72,13 +102,27 @@ function answers() {
             var description = snap.child("description").val();
             var zoo=snap.child("zoo").val();
 
-            var firstRow = document.getElementById("table").rows[0];
-            var x = firstRow.insertCell(+2);
-            x.innerHTML = "<img src='../../Images/Thumbnails/Elephant2.jpeg' height='120' width='120' alt='hello'/>";
+            var numbers=snap.child("numbers").val();
+            var continent=snap.child("continent").val();
+            var country=snap.child("country").val();
 
-            $("#table_body1").append("<tr><td>" + description + "</td><td>"+zoo +"</td><td>"+"Elephant Image" +"</td><tr>")
+
+            var root=firebase.database().ref().child("Edinburgh");
+            root.on("child_added", snap=>{
+                var address=snap.child("address").val();
+                var phoneno=snap.child("phoneno").val();
+                var time=snap.child("time").val();
+
+            var firstRow = document.getElementById("table").rows[0];
+            var x = firstRow.insertCell(+3);
+            x.innerHTML = "<img src='http://images.nationalgeographic.com/wpf/media-live/photos/000/004/cache/african-elephant_435_600x450.jpg' height='120' width='120' alt='hello'/>";
+
+            $("#table_body1").append("<tr><td>" + description + "</td><td>"+ continent+"</td><td>"+ country+"</td><td>"+"Elephant Image" +"</td><tr>")
             $("#table_body").append("<tr><td>" + originalname + "</td><td>" + latinname + "</td><td>" + order1 + "</td><td>" + family + "</td><td>" + genus + "</td><td>" + species + "</td></tr>")
-        });
+
+                $("#table_body2").append("<tr><td>" + address + "</td><td>" + phoneno + "</td><td>" + time + "</td><td>" + numbers + "</td><tr>")
+            });
+            });
     }
 
     else if ((((answer.value =="Horse" || answer.value == "horse" )|| (answer.value =="Equidae"  || answer.value == "equidae"))||((answer.value =="Equus" || answer.value == "equus" )|| (answer.value =="Perissodactyla"  || answer.value == "perissodactyla")))
@@ -97,12 +141,25 @@ function answers() {
             var description = snap.child("description").val();
             var zoo=snap.child("zoo").val();
 
-            var firstRow = document.getElementById("table").rows[0];
-            var x = firstRow.insertCell(+2);
-            x.innerHTML = "<img src='../../Images/Thumbnails/Horse1.jpg' height='120' width='120' alt='hello'/>";
+            var numbers=snap.child("numbers").val();
+            var continent=snap.child("continent").val();
+            var country=snap.child("country").val();
 
-            $("#table_body1").append("<tr><td>" + description + "</td><td>"+ zoo+"</td><td>"+"Horse Image" +"</td><tr>")
+
+            var root=firebase.database().ref().child("London");
+            root.on("child_added", snap=>{
+                var address=snap.child("address").val();
+                var phoneno=snap.child("phoneno").val();
+                var time=snap.child("time").val();
+
+            var firstRow = document.getElementById("table").rows[0];
+            var x = firstRow.insertCell(+3);
+            x.innerHTML = "<img src='https://www.scienceabc.com/wp-content/uploads/2016/05/horse-running.jpg' height='120' width='120' alt='hello'/>";
+
+            $("#table_body1").append("<tr><td>" + description + "</td><td>"+ continent+"</td><td>"+ country+"</td><td>"+"Horse Image" +"</td><tr>")
             $("#table_body").append("<tr><td>" + originalname + "</td><td>" + latinname + "</td><td>" + order1 + "</td><td>" + family + "</td><td>" + genus + "</td><td>" + species + "</td></tr>")
+            $("#table_body2").append("<tr><td>" + address + "</td><td>" + phoneno + "</td><td>" + time + "</td><td>" + numbers + "</td><tr>")
+            });
         });
     }
 
@@ -122,13 +179,27 @@ function answers() {
             var description = snap.child("description").val();
             var zoo=snap.child("zoo").val();
 
-            var firstRow = document.getElementById("table").rows[0];
-            var x = firstRow.insertCell(+2);
-            x.innerHTML = "<img src='../../Images/Thumbnails/Lion1.jpeg' height='120' width='120' alt='hello'/>";
+            var numbers=snap.child("numbers").val();
+            var continent=snap.child("continent").val();
+            var country=snap.child("country").val();
 
-            $("#table_body1").append("<tr><td>" + description + "</td><td>"+ zoo+"</td><td>"+"Lion Image" +"</td><tr>")
+
+            var root=firebase.database().ref().child("Hamerton");
+            root.on("child_added", snap=>{
+                var address=snap.child("address").val();
+                var phoneno=snap.child("phoneno").val();
+                var time=snap.child("time").val();
+
+            var firstRow = document.getElementById("table").rows[0];
+            var x = firstRow.insertCell(+3);
+            x.innerHTML = "<img src='https://images4.alphacoders.com/242/thumb-1920-242394.jpg' height='120' width='120' alt='hello'/>";
+
+            $("#table_body1").append("<tr><td>" + description + "</td><td>"+ continent+"</td><td>"+ country+"</td><td>"+"Lion Image" +"</td><tr>")
             $("#table_body").append("<tr><td>" + originalname + "</td><td>" + latinname + "</td><td>" + order1 + "</td><td>" + family + "</td><td>" + genus + "</td><td>" + species + "</td></tr>")
-        });
+                $("#table_body2").append("<tr><td>" + address + "</td><td>" + phoneno + "</td><td>" + time + "</td><td>" + numbers + "</td><tr>")
+            });
+
+            });
     }
 
     else if ((((answer.value =="Panda" || answer.value == "panda" )|| (answer.value =="Ursidae"  || answer.value == "ursidae"))||((answer.value =="Ailuropoda" || answer.value == "ailuropoda" )|| (answer.value =="Pandam"  || answer.value == "pandam")))
@@ -147,13 +218,26 @@ function answers() {
             var description = snap.child("description").val();
             var zoo=snap.child("zoo").val();
 
-            var firstRow = document.getElementById("table").rows[0];
-            var x = firstRow.insertCell(+2);
-            x.innerHTML = "<img src='../../Images/Thumbnails/Panda1.jpg' height='120' width='120' alt='hello'/>";
+            var numbers=snap.child("numbers").val();
+            var continent=snap.child("continent").val();
+            var country=snap.child("country").val();
 
-            $("#table_body1").append("<tr><td>" + description + "</td><td>"+ zoo+"</td><td>"+"Panda Image" +"</td><tr>")
+
+            var root=firebase.database().ref().child("Bristol");
+            root.on("child_added", snap=>{
+                var address=snap.child("address").val();
+                var phoneno=snap.child("phoneno").val();
+                var time=snap.child("time").val();
+
+            var firstRow = document.getElementById("table").rows[0];
+            var x = firstRow.insertCell(+3);
+            x.innerHTML = "<img src='https://images4.alphacoders.com/276/276178.jpg' height='120' width='120' alt='hello'/>";
+
+            $("#table_body1").append("<tr><td>" + description + "</td><td>"+ continent+"</td><td>"+ country+"</td><td>"+"Panda Image" +"</td><tr>")
             $("#table_body").append("<tr><td>" + originalname + "</td><td>" + latinname + "</td><td>" + order1 + "</td><td>" + family + "</td><td>" + genus + "</td><td>" + species + "</td></tr>")
-        });
+                $("#table_body2").append("<tr><td>" + address + "</td><td>" + phoneno + "</td><td>" + time + "</td><td>" + numbers + "</td><tr>")
+            });
+            });
     }
 
     else if ((((answer.value =="Penguin" || answer.value == "penguin" )|| (answer.value =="Spheniscidae"  || answer.value == "spheniscidae"))||((answer.value =="Aptenodytes" || answer.value == "aptenodytes" )|| (answer.value =="Sphenisciformes"  || answer.value == "sphenisciformes")))
@@ -172,12 +256,25 @@ function answers() {
             var description = snap.child("description").val();
             var zoo=snap.child("zoo").val();
 
-            var firstRow = document.getElementById("table").rows[0];
-            var x = firstRow.insertCell(+2);
-            x.innerHTML = "<img src='../../Images/Thumbnails/Penguin1.jpg' height='120' width='120' alt='hello'/>";
+            var numbers=snap.child("numbers").val();
+            var continent=snap.child("continent").val();
+            var country=snap.child("country").val();
 
-            $("#table_body1").append("<tr><td>" + description + "</td><td>"+ zoo+"</td><td>"+"Penguin Image" +"</td><tr>")
+
+            var root=firebase.database().ref().child("London");
+            root.on("child_added", snap=>{
+                var address=snap.child("address").val();
+                var phoneno=snap.child("phoneno").val();
+                var time=snap.child("time").val();
+
+            var firstRow = document.getElementById("table").rows[0];
+            var x = firstRow.insertCell(+3);
+            x.innerHTML = "<img src='http://vignette1.wikia.nocookie.net/happyfeet/images/0/07/Emperor_Penguin_Manchot_empereur.jpg/revision/latest?cb=20140412162231' height='120' width='120' alt='hello'/>";
+
+            $("#table_body1").append("<tr><td>" + description + "</td><td>"+ continent+"</td><td>"+ country+"</td><td>"+"Penguin Image" +"</td><tr>")
             $("#table_body").append("<tr><td>" + originalname + "</td><td>" + latinname + "</td><td>" + order1 + "</td><td>" + family + "</td><td>" + genus + "</td><td>" + species + "</td></tr>")
+                $("#table_body2").append("<tr><td>" + address + "</td><td>" + phoneno + "</td><td>" + time + "</td><td>" + numbers + "</td><tr>")
+            });
         });
     }
 
@@ -197,12 +294,25 @@ function answers() {
             var description = snap.child("description").val();
             var zoo=snap.child("zoo").val();
 
-            var firstRow = document.getElementById("table").rows[0];
-            var x = firstRow.insertCell(+2);
-            x.innerHTML = "<img src='../../Images/Thumbnails/Python1.jpg' height='120' width='120' alt='hello'/>";
+            var numbers=snap.child("numbers").val();
+            var continent=snap.child("continent").val();
+            var country=snap.child("country").val();
 
-            $("#table_body1").append("<tr><td>" + description + "</td><td>"+ zoo+"</td><td>"+"Python Image" +"</td><tr>")
+
+            var root=firebase.database().ref().child("Bristol");
+            root.on("child_added", snap=>{
+                var address=snap.child("address").val();
+                var phoneno=snap.child("phoneno").val();
+                var time=snap.child("time").val();
+
+            var firstRow = document.getElementById("table").rows[0];
+            var x = firstRow.insertCell(+3);
+            x.innerHTML = "<img src='http://images.dailystar.co.uk/dynamic/1/photos/611000/53611.jpg' height='120' width='120' alt='hello'/>";
+
+            $("#table_body1").append("<tr><td>" + description + "</td><td>"+ continent+"</td><td>"+ country+"</td><td>"+"Python Image" +"</td><tr>")
             $("#table_body").append("<tr><td>" + originalname + "</td><td>" + latinname + "</td><td>" + order1 + "</td><td>" + family + "</td><td>" + genus + "</td><td>" + species + "</td></tr>")
+                $("#table_body2").append("<tr><td>" + address + "</td><td>" + phoneno + "</td><td>" + time + "</td><td>" + numbers + "</td><tr>")
+            });
         });
     }
 
@@ -222,13 +332,26 @@ function answers() {
             var description = snap.child("description").val();
             var zoo=snap.child("zoo").val();
 
-            var firstRow = document.getElementById("table").rows[0];
-            var x = firstRow.insertCell(+2);
-            x.innerHTML = "<img src='../../Images/Thumbnails/Tiger2.jpeg' height='120' width='120' alt='hello'/>";
+            var numbers=snap.child("numbers").val();
+            var continent=snap.child("continent").val();
+            var country=snap.child("country").val();
 
-            $("#table_body1").append("<tr><td>" + description + "</td><td>"+zoo +"</td><td>"+"Tiger Image" +"</td><tr>")
+
+            var root=firebase.database().ref().child("Edinburgh");
+            root.on("child_added", snap=>{
+                var address=snap.child("address").val();
+                var phoneno=snap.child("phoneno").val();
+                var time=snap.child("time").val();
+
+            var firstRow = document.getElementById("table").rows[0];
+            var x = firstRow.insertCell(+3);
+            x.innerHTML = "<img src='https://s-media-cache-ak0.pinimg.com/originals/13/de/b9/13deb9e8f9dcc7ad5677289da25c0e5e.jpg' height='120' width='120' alt='hello'/>";
+
+            $("#table_body1").append("<tr><td>" + description + "</td><td>"+ continent+"</td><td>"+ country+"</td><td>"+"Tiger Image" +"</td><tr>")
             $("#table_body").append("<tr><td>" + originalname + "</td><td>" + latinname + "</td><td>" + order1 + "</td><td>" + family + "</td><td>" + genus + "</td><td>" + species + "</td></tr>")
-        });
+                $("#table_body2").append("<tr><td>" + address + "</td><td>" + phoneno + "</td><td>" + time + "</td><td>" + numbers + "</td><tr>")
+            });
+            });
     }
 
     else if ((((answer.value =="Turtle" || answer.value == "turtle" )|| (answer.value =="Emididae"  || answer.value == "emididae"))||((answer.value =="Cuora" || answer.value == "cuora" )|| (answer.value =="Testudo"  || answer.value == "testudo")))
@@ -247,14 +370,27 @@ function answers() {
             var description = snap.child("description").val();
             var zoo=snap.child("zoo").val();
 
+            var numbers=snap.child("numbers").val();
+            var continent=snap.child("continent").val();
+            var country=snap.child("country").val();
+
+
+            var root=firebase.database().ref().child("London");
+            root.on("child_added", snap=>{
+                var address=snap.child("address").val();
+                var phoneno=snap.child("phoneno").val();
+                var time=snap.child("time").val();
+
             var firstRow = document.getElementById("table").rows[0];
-            var x = firstRow.insertCell(+2);
-            x.innerHTML = "<img src='../../Images/Thumbnails/Turtle1.jpg' height='120' width='120' alt='hello'/>";
+            var x = firstRow.insertCell(+3  );
+            x.innerHTML = "<img src='http://www.airlive.net/wp-content/uploads/2016/05/138292-425x282-Baby_turtle.jpg' height='120' width='120' alt='hello'/>";
 
 
-            $("#table_body1").append("<tr><td>" + description + "</td><td>"+ zoo+"</td><td>"+"Turtle Image" +"</td><tr>")
+            $("#table_body1").append("<tr><td>" + description + "</td><td>"+ continent+"</td><td>"+ country+"</td><td>"+"Turtle Image" +"</td><tr>")
             $("#table_body").append("<tr><td>" + originalname + "</td><td>" + latinname + "</td><td>" + order1 + "</td><td>" + family + "</td><td>" + genus + "</td><td>" + species + "</td></tr>")
-        });
+                $("#table_body2").append("<tr><td>" + address + "</td><td>" + phoneno + "</td><td>" + time + "</td><td>" + numbers + "</td><tr>")
+            });
+            });
     }
 
 
