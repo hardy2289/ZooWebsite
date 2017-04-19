@@ -86,30 +86,30 @@
 
 
 
-					<h3>Search Animal by their Original or Latin name:  </h3>
 
+					<select id="mySelect">
+						<option value="void">Animal List</option>
+						<option value="Bonobo">Bonobo</option>
+						<option value="Chimpanzee">Chimpanzee</option>
+						<option value="Elephnat">Elephant</option>
+						<option value="Horse">Horse</option>
+						<option value="Lion">Lion</option>
+						<option value="Panda">Panda</option>
+						<option value="Penguin">Penguin</option>
+						<option value="Python">Python</option>
+						<option value="Tiger">Tiger</option>
+						<option value="Turtle">Turtle</option>
+					</select> <br><br>
 					<form>
 						<div class="answer1wrap">
-							Search <input type="text" id="myInput">
+							<h3><strong>Search Animal by their Original or Latin name:</strong>  </h3>
+							&nbsp;&nbsp;&nbsp; <input type="text" id="myInput">&nbsp;&nbsp;
+
 							<button class="btn btn-default" id="checkbtn" onclick="answers()" type="button">Search</button>
 						</div>
 					</form> <br><br>
 
-
-
-					<table id="table" class="gridtable" style="width:100%" border=" 3" >
-						<thead>
-						<tr>
-							<td><strong>Animal Description</strong></td>
-							<td><strong>Animal Image</strong></td>
-						</tr>
-						</thead>
-						<tbody id="table_body1">
-
-						</tbody>
-					</table>
-
-					<table id="table" class="gridtable" style="width:100%" border=" 3" >
+					<table id="table1" class="gridtable" style="width:100%" border=" 3" >
 						<thead>
 						<tr>
 							<td><strong>Original Name</strong></td>
@@ -124,6 +124,19 @@
 
 						</tbody>
 					</table>
+					<table id="table" class="gridtable" style="width:100%" border=" 3" >
+						<thead>
+						<tr>
+							<td><strong>Animal Description</strong></td>
+							<td><strong>Zoo Location</strong></td>
+
+						</tr>
+						</thead>
+						<tbody id="table_body1">
+						</tbody>
+					</table>
+
+
 
 
 
