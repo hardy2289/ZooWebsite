@@ -37,7 +37,7 @@ function answers() {
     var x = firstRow.insertCell(+3);
     x.innerHTML = "<img src='http://images.nationalgeographic.com/wpf/media-live/photos/000/007/cache/young-chimp_763_600x450.jpg' height='120' width='120' alt='hello'/>";
 
-            $("#table_body1").append("<tr><td>" + description + "</td><td>"+ continent+"</td><td>"+ country+"</td><td>"+"Chimpanzee Image" +"</td><tr>")
+            $("#table_body3").append("<tr><td>" + description + "</td><td>"+ continent+"</td><td>"+ country+"</td><td>"+"Chimpanzee Image" +"</td><tr>")
             $("#table_body").append("<tr><td>" + originalname + "</td><td>" + latinname + "</td><td>" + order1 + "</td><td>" + family + "</td><td>" + genus + "</td><td>" + species + "</td></tr>")
             $("#table_body2").append("<tr><td>" + address + "</td><td>" + phoneno + "</td><td>" + time + "</td><td>" + numbers + "</td><tr>")
         });
@@ -78,7 +78,7 @@ function answers() {
             var x = firstRow.insertCell(+3);
             x.innerHTML = "<img src='http://animals.sandiegozoo.org/sites/default/files/2016-10/bonobo_portrait.jpg' height='120' width='120' alt='hello'/>";
 
-            $("#table_body1").append("<tr><td>" + description + "</td><td>"+ continent+"</td><td>"+ country+"</td><td>"+"Bonobo Image" +"</td><tr>")
+            $("#table_body3").append("<tr><td>" + description + "</td><td>"+ continent+"</td><td>"+ country+"</td><td>"+"Bonobo Image" +"</td><tr>")
             $("#table_body").append("<tr><td>" + originalname + "</td><td>" + latinname + "</td><td>" + order1 + "</td><td>" + family + "</td><td>" + genus + "</td><td>" + species + "</td></tr>")
                 $("#table_body2").append("<tr><td>" + address + "</td><td>" + phoneno + "</td><td>" + time + "</td><td>" + numbers + "</td><tr>")
             });
@@ -117,7 +117,7 @@ function answers() {
             var x = firstRow.insertCell(+3);
             x.innerHTML = "<img src='http://images.nationalgeographic.com/wpf/media-live/photos/000/004/cache/african-elephant_435_600x450.jpg' height='120' width='120' alt='hello'/>";
 
-            $("#table_body1").append("<tr><td>" + description + "</td><td>"+ continent+"</td><td>"+ country+"</td><td>"+"Elephant Image" +"</td><tr>")
+            $("#table_body3").append("<tr><td>" + description + "</td><td>"+ continent+"</td><td>"+ country+"</td><td>"+"Elephant Image" +"</td><tr>")
             $("#table_body").append("<tr><td>" + originalname + "</td><td>" + latinname + "</td><td>" + order1 + "</td><td>" + family + "</td><td>" + genus + "</td><td>" + species + "</td></tr>")
 
                 $("#table_body2").append("<tr><td>" + address + "</td><td>" + phoneno + "</td><td>" + time + "</td><td>" + numbers + "</td><tr>")
@@ -156,7 +156,7 @@ function answers() {
             var x = firstRow.insertCell(+3);
             x.innerHTML = "<img src='https://www.scienceabc.com/wp-content/uploads/2016/05/horse-running.jpg' height='120' width='120' alt='hello'/>";
 
-            $("#table_body1").append("<tr><td>" + description + "</td><td>"+ continent+"</td><td>"+ country+"</td><td>"+"Horse Image" +"</td><tr>")
+            $("#table_body3").append("<tr><td>" + description + "</td><td>"+ continent+"</td><td>"+ country+"</td><td>"+"Horse Image" +"</td><tr>")
             $("#table_body").append("<tr><td>" + originalname + "</td><td>" + latinname + "</td><td>" + order1 + "</td><td>" + family + "</td><td>" + genus + "</td><td>" + species + "</td></tr>")
             $("#table_body2").append("<tr><td>" + address + "</td><td>" + phoneno + "</td><td>" + time + "</td><td>" + numbers + "</td><tr>")
             });
@@ -194,7 +194,7 @@ function answers() {
             var x = firstRow.insertCell(+3);
             x.innerHTML = "<img src='https://images4.alphacoders.com/242/thumb-1920-242394.jpg' height='120' width='120' alt='hello'/>";
 
-            $("#table_body1").append("<tr><td>" + description + "</td><td>"+ continent+"</td><td>"+ country+"</td><td>"+"Lion Image" +"</td><tr>")
+            $("#table_body3").append("<tr><td>" + description + "</td><td>"+ continent+"</td><td>"+ country+"</td><td>"+"Lion Image" +"</td><tr>")
             $("#table_body").append("<tr><td>" + originalname + "</td><td>" + latinname + "</td><td>" + order1 + "</td><td>" + family + "</td><td>" + genus + "</td><td>" + species + "</td></tr>")
                 $("#table_body2").append("<tr><td>" + address + "</td><td>" + phoneno + "</td><td>" + time + "</td><td>" + numbers + "</td><tr>")
             });
@@ -233,7 +233,7 @@ function answers() {
             var x = firstRow.insertCell(+3);
             x.innerHTML = "<img src='https://images4.alphacoders.com/276/276178.jpg' height='120' width='120' alt='hello'/>";
 
-            $("#table_body1").append("<tr><td>" + description + "</td><td>"+ continent+"</td><td>"+ country+"</td><td>"+"Panda Image" +"</td><tr>")
+            $("#table_body3").append("<tr><td>" + description + "</td><td>"+ continent+"</td><td>"+ country+"</td><td>"+"Panda Image" +"</td><tr>")
             $("#table_body").append("<tr><td>" + originalname + "</td><td>" + latinname + "</td><td>" + order1 + "</td><td>" + family + "</td><td>" + genus + "</td><td>" + species + "</td></tr>")
                 $("#table_body2").append("<tr><td>" + address + "</td><td>" + phoneno + "</td><td>" + time + "</td><td>" + numbers + "</td><tr>")
             });
@@ -271,7 +271,7 @@ function answers() {
             var x = firstRow.insertCell(+3);
             x.innerHTML = "<img src='http://vignette1.wikia.nocookie.net/happyfeet/images/0/07/Emperor_Penguin_Manchot_empereur.jpg/revision/latest?cb=20140412162231' height='120' width='120' alt='hello'/>";
 
-            $("#table_body1").append("<tr><td>" + description + "</td><td>"+ continent+"</td><td>"+ country+"</td><td>"+"Penguin Image" +"</td><tr>")
+            $("#table_body3").append("<tr><td>" + description + "</td><td>"+ continent+"</td><td>"+ country+"</td><td>"+"Penguin Image" +"</td><tr>")
             $("#table_body").append("<tr><td>" + originalname + "</td><td>" + latinname + "</td><td>" + order1 + "</td><td>" + family + "</td><td>" + genus + "</td><td>" + species + "</td></tr>")
                 $("#table_body2").append("<tr><td>" + address + "</td><td>" + phoneno + "</td><td>" + time + "</td><td>" + numbers + "</td><tr>")
             });
@@ -309,7 +309,7 @@ function answers() {
             var x = firstRow.insertCell(+3);
             x.innerHTML = "<img src='http://images.dailystar.co.uk/dynamic/1/photos/611000/53611.jpg' height='120' width='120' alt='hello'/>";
 
-            $("#table_body1").append("<tr><td>" + description + "</td><td>"+ continent+"</td><td>"+ country+"</td><td>"+"Python Image" +"</td><tr>")
+            $("#table_body3").append("<tr><td>" + description + "</td><td>"+ continent+"</td><td>"+ country+"</td><td>"+"Python Image" +"</td><tr>")
             $("#table_body").append("<tr><td>" + originalname + "</td><td>" + latinname + "</td><td>" + order1 + "</td><td>" + family + "</td><td>" + genus + "</td><td>" + species + "</td></tr>")
                 $("#table_body2").append("<tr><td>" + address + "</td><td>" + phoneno + "</td><td>" + time + "</td><td>" + numbers + "</td><tr>")
             });
@@ -347,7 +347,7 @@ function answers() {
             var x = firstRow.insertCell(+3);
             x.innerHTML = "<img src='https://s-media-cache-ak0.pinimg.com/originals/13/de/b9/13deb9e8f9dcc7ad5677289da25c0e5e.jpg' height='120' width='120' alt='hello'/>";
 
-            $("#table_body1").append("<tr><td>" + description + "</td><td>"+ continent+"</td><td>"+ country+"</td><td>"+"Tiger Image" +"</td><tr>")
+            $("#table_body3").append("<tr><td>" + description + "</td><td>"+ continent+"</td><td>"+ country+"</td><td>"+"Tiger Image" +"</td><tr>")
             $("#table_body").append("<tr><td>" + originalname + "</td><td>" + latinname + "</td><td>" + order1 + "</td><td>" + family + "</td><td>" + genus + "</td><td>" + species + "</td></tr>")
                 $("#table_body2").append("<tr><td>" + address + "</td><td>" + phoneno + "</td><td>" + time + "</td><td>" + numbers + "</td><tr>")
             });
@@ -386,7 +386,7 @@ function answers() {
             x.innerHTML = "<img src='http://www.airlive.net/wp-content/uploads/2016/05/138292-425x282-Baby_turtle.jpg' height='120' width='120' alt='hello'/>";
 
 
-            $("#table_body1").append("<tr><td>" + description + "</td><td>"+ continent+"</td><td>"+ country+"</td><td>"+"Turtle Image" +"</td><tr>")
+            $("#table_body3").append("<tr><td>" + description + "</td><td>"+ continent+"</td><td>"+ country+"</td><td>"+"Turtle Image" +"</td><tr>")
             $("#table_body").append("<tr><td>" + originalname + "</td><td>" + latinname + "</td><td>" + order1 + "</td><td>" + family + "</td><td>" + genus + "</td><td>" + species + "</td></tr>")
                 $("#table_body2").append("<tr><td>" + address + "</td><td>" + phoneno + "</td><td>" + time + "</td><td>" + numbers + "</td><tr>")
             });

@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a5491d4-5bc5-4984-8208-697a24dab539" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Map/javascript.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Map/mapview.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Map/trial.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/builds/menageriezoo/js/mp.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/trialnew.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/builds/menageriezoo/Planatrip.html" afterPath="$PROJECT_DIR$/builds/menageriezoo/Planatrip.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/builds/menageriezoo/Useraccount.html" afterPath="$PROJECT_DIR$/builds/menageriezoo/Useraccount.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/builds/menageriezoo/contact.html" afterPath="$PROJECT_DIR$/builds/menageriezoo/contact.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/builds/menageriezoo/gallery.html" afterPath="$PROJECT_DIR$/builds/menageriezoo/gallery.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/builds/menageriezoo/information.html" afterPath="$PROJECT_DIR$/builds/menageriezoo/information.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/builds/menageriezoo/js/information.js" afterPath="$PROJECT_DIR$/builds/menageriezoo/js/information.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trial.html" afterPath="$PROJECT_DIR$/trial.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,18 +23,28 @@
       <file leaf-file-name="information.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/builds/menageriezoo/js/information.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="384" column="44" lean-forward="false" selection-start-line="384" selection-start-column="44" selection-end-line="384" selection-end-column="44" />
+            <state relative-caret-position="549">
+              <caret line="388" column="27" lean-forward="false" selection-start-line="388" selection-start-column="27" selection-end-line="388" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="information.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="animal.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/builds/menageriezoo/js/animal.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-306">
+              <caret line="178" column="51" lean-forward="true" selection-start-line="178" selection-start-column="51" selection-end-line="178" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="information.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/builds/menageriezoo/information.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="152" column="0" lean-forward="false" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
+            <state relative-caret-position="306">
+              <caret line="191" column="18" lean-forward="true" selection-start-line="191" selection-start-column="18" selection-end-line="191" selection-end-column="18" />
               <folding>
                 <element signature="n#style#0;n#table#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#table#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -54,11 +54,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Useraccount.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Useraccount.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/builds/menageriezoo/Useraccount.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="179" column="4" lean-forward="false" selection-start-line="179" selection-start-column="4" selection-end-line="179" selection-end-column="4" />
+            <state relative-caret-position="374">
+              <caret line="48" column="3" lean-forward="false" selection-start-line="48" selection-start-column="3" selection-end-line="48" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/builds/menageriezoo/js/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -69,16 +79,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
               <caret line="12" column="12" lean-forward="true" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mp.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/builds/menageriezoo/js/mp.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1902">
-              <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -186,9 +186,9 @@
         <option value="$PROJECT_DIR$/Map/trial.html" />
         <option value="$PROJECT_DIR$/trial.html" />
         <option value="$PROJECT_DIR$/Map/mapview.html" />
+        <option value="$PROJECT_DIR$/builds/menageriezoo/Useraccount.html" />
         <option value="$PROJECT_DIR$/builds/menageriezoo/js/information.js" />
         <option value="$PROJECT_DIR$/builds/menageriezoo/information.html" />
-        <option value="$PROJECT_DIR$/builds/menageriezoo/Useraccount.html" />
       </list>
     </option>
   </component>
@@ -266,6 +266,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="menageriezoo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Zoo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Zoo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="builds" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="menageriezoo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -783,16 +805,16 @@
       <workItem from="1492511330679" duration="1958000" />
       <workItem from="1492521896106" duration="11873000" />
       <workItem from="1492561153642" duration="13172000" />
-      <workItem from="1492608583187" duration="17323000" />
+      <workItem from="1492608583187" duration="23131000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113225000" />
+    <option name="totallyTimeSpent" value="119033000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1367" height="735" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -875,7 +897,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../menageriezoo-Animals-export.json" />
     <entry file="file://$PROJECT_DIR$/../menageriezoo-export.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -968,14 +989,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/builds/menageriezoo/js/animal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1855">
-          <caret line="189" column="49" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="281" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/elephant.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -990,6 +1003,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="58" column="47" lean-forward="false" selection-start-line="58" selection-start-column="47" selection-end-line="58" selection-end-column="47" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1189,31 +1203,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/builds/menageriezoo/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/builds/menageriezoo/Useraccount.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="48" column="3" lean-forward="false" selection-start-line="48" selection-start-column="3" selection-end-line="48" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/builds/menageriezoo/js/animal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-306">
+          <caret line="178" column="51" lean-forward="true" selection-start-line="178" selection-start-column="51" selection-end-line="178" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/builds/menageriezoo/js/information.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="384" column="44" lean-forward="false" selection-start-line="384" selection-start-column="44" selection-end-line="384" selection-end-column="44" />
+        <state relative-caret-position="549">
+          <caret line="388" column="27" lean-forward="false" selection-start-line="388" selection-start-column="27" selection-end-line="388" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/builds/menageriezoo/information.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="152" column="0" lean-forward="false" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
+        <state relative-caret-position="306">
+          <caret line="191" column="18" lean-forward="true" selection-start-line="191" selection-start-column="18" selection-end-line="191" selection-end-column="18" />
           <folding>
             <element signature="n#style#0;n#table#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#table#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#table#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/builds/menageriezoo/Useraccount.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="179" column="4" lean-forward="false" selection-start-line="179" selection-start-column="4" selection-end-line="179" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
