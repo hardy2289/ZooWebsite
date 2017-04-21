@@ -5,6 +5,10 @@
 
 // Initialize Firebase
 
+
+
+
+
 function answers() {
     var answer = document.getElementById("mySelect");
 

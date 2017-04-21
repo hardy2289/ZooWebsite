@@ -1,3 +1,9 @@
+
+
+
+
+
+
 function answers() {
 
 
@@ -391,6 +397,12 @@ function answers() {
                 $("#table_body2").append("<tr><td>" + address + "</td><td>" + phoneno + "</td><td>" + time + "</td><td>" + numbers + "</td><tr>")
             });
             });
+    }
+
+
+    else if (answer.value==""){
+
+        window.alert("Please fill the required information");
     }
 
 

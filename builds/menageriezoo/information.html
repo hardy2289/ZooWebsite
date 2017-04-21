@@ -55,6 +55,37 @@
             if (input == '')
                 output[0].selected = true;
         }
+
+
+
+
+
+        function nearpostcode(){
+
+
+
+            var nearp=document.getElementById("txtStart").value;
+
+            var postcode=document.getElementById("myselect3");
+
+
+
+            if (nearp > postcode) {
+
+                var rootRef = firebase.database().ref().child("London");
+
+                rootRef.on("child_added", snap => {
+                    var address = snap.child("address").val();
+                    var phoneno = snap.child("phoneno").val();
+                    var time1 = snap.child("time").val();
+
+
+                    $("#table_body1").append("<tr><td>" + address + "</td><td>" + phoneno + "</td><td>" + time1 + "</td></tr>")
+
+                });
+            }
+
+        }
 	</script>
 	</head>
 <body>
@@ -86,7 +117,7 @@
 
 
 
-
+					<h3><strong>List of All the Animals:</strong>  </h3>
 					<select id="mySelect">
 						<option value="void">Animal List</option>
 						<option value="Bonobo">Bonobo</option>
@@ -101,14 +132,13 @@
 						<option value="Turtle">Turtle</option>
 					</select> <br><br>
 
-					<form>
-						<div>
+
+
 							<h3><strong>Search Animal by their Original or Latin name:</strong>  </h3>
 							&nbsp;&nbsp;&nbsp; <input type="text" id="myInput">&nbsp;&nbsp;
 
 							<button class="btn btn-default" id="checkbtn" onclick="answers()" type="button">Search</button>
-						</div>
-					</form> <br><br>
+					 <br><br>
 
 					<table id="table1" class="gridtable" style="width:100%" border=" 3" >
 						<thead>
@@ -152,7 +182,10 @@
 					</table><br>
 
 
-					<h3><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Select Zoo which you want to Visit:</strong>  </h3>
+
+
+
+					<h3><strong>Select Zoo which you want to Visit:</strong>  </h3>
 
 					<form>
 						<div class="answer1wrap">
@@ -184,9 +217,15 @@
 						</tbody>
 					</table> <br>
 
+					<h3><strong>All Zoo Location on Map:</strong>  </h3><br>
+					<h3>Please Click on the Pinpoint to get the Information about Every Single Zoo of Menagerie Network.</h3><br>
 
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<center><iframe src="https://www.google.com/maps/d/embed?mid=1dqgZHTNUc0_UuArX3wRnvHs4n-Y" width="650" height="300"></iframe></center>
 
-					<iframe src="https://www.google.com/maps/d/embed?mid=1dqgZHTNUc0_UuArX3wRnvHs4n-Y" width="450" height="450"></iframe>
+					<br><br><a href="Navigation.html">  <input type="image" src="../../images/Navigation.jpg" ></a>
+
 
 				</div>
 			</div>
