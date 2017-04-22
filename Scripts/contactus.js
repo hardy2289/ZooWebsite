@@ -13,9 +13,9 @@ function validate() {
         return false;
     }
 
-    if( !document.ContactUs.Comments.value.match(/^[A-Za-z0-9]$/) )
+    if( !document.ContactUs.Comments.value.match(/^[A-Za-z0-9]{2,100}$/) )
     {
-        alert( "Please provide Valid Password!" );
+        alert( "Please provide Valid Comments!" );
         document.ContactUs.Comments.focus() ;
         return false;
     }
