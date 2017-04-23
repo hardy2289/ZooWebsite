@@ -404,6 +404,9 @@ function answers() {
 
         window.alert("Please fill the required information");
     }
+    else {
 
+        window.alert("No Animal Found");
+    }
 
 }
