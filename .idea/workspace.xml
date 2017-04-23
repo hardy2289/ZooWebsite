@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7a5491d4-5bc5-4984-8208-697a24dab539" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Bonobo1.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Cheetah1.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Map/ZoosGeoRSS.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Map/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Map/mapview.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Map/smallK.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Map/trial.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/animals.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/trial.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/trialnew.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Map/javascript.js" afterPath="$PROJECT_DIR$/builds/menageriezoo/js/javascript.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Scripts/contactus.js" afterPath="$PROJECT_DIR$/Scripts/contactus.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/builds/menageriezoo/Navigation.html" afterPath="$PROJECT_DIR$/builds/menageriezoo/Navigation.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/builds/menageriezoo/Planatrip.html" afterPath="$PROJECT_DIR$/builds/menageriezoo/Planatrip.html" />
-    </list>
+    <list default="true" id="7a5491d4-5bc5-4984-8208-697a24dab539" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -832,8 +816,8 @@
     <option name="totallyTimeSpent" value="159316000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1370" height="744" extended-state="1" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1370" height="744" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
