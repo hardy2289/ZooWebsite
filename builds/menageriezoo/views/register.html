@@ -3,17 +3,10 @@
   <h2 class="message" ng-show="message">{{ message }}</h2> <br>
 
 
-
-
-
-
 <section class="card register">
   <form name="myform"
         ng-submit="register()"
         novalidate>
-
-
-
       <input type="text" name="firstname" placeholder="First Name"
              ng-model="user.firstname" ng-required="true">
       <p class="error validationerror"
@@ -38,8 +31,6 @@
              ng-minlength="6">
       <p class="error validationerror" ng-show="myform.password.$invalid && myform.password.$touched">
           Password must be at least 6 characters</p>
-
-
 
     <button type="submit" class="btn"
             ng-disabled="myform.$invalid">Register</button>

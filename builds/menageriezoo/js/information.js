@@ -32,7 +32,6 @@ function answers() {
             var continent=snap.child("continent").val();
             var country=snap.child("country").val();
 
-
             var root=firebase.database().ref().child("Battersea");
             root.on("child_added", snap=>{
                 var address=snap.child("address").val();
