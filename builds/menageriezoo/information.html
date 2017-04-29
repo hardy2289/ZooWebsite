@@ -3,7 +3,14 @@
 <html>
 <head>
 
-
+<style>
+    table.sortable thead {
+        background-color:#eee;
+        color:#666666;
+        font-weight: bold;
+        cursor: default;
+    }
+    </style>
 	<br>
 	<link rel="stylesheet" href="../../css/style.css" type="text/css" />
 	<title>Menagerie Network</title>
@@ -26,7 +33,6 @@
         };
         firebase.initializeApp(config);
 	</script>
-
 	<script src=" https://code.jquery.com/jquery-3.1.0.js"> </script>
 	<script src="https://cdn.firebase.com/libs/angularfire/2.1.0/angularfire.min.js"></script>
 	<script src="js/information.js"></script>
@@ -87,7 +93,8 @@
 
         }
 	</script>
-	</head>
+    <script src="js/sorttable.js"></script>
+</head>
 <body>
 <div id="page">
 	<div id="header">
@@ -181,6 +188,22 @@
 						</tbody>
 					</table><br><br>
 
+					<input type="input" id="getPostCode" placeholder="Enter Postcode"/>
+                    <button id="clickForPostcode">Search</button>
+					<table id="distanceTable" class="sortable" border="1" width="100%">
+						<thead>
+							<tr>
+								<td>Zoo Name</td>
+								<td>Zoo Postcode</td>
+								<td>Address</td>
+								<td>Latlong</td>
+                                <td>Distance</td>
+							</tr>
+						</thead>
+						<tbody>
+
+						</tbody>
+					</table>
 
 					<h3><strong>All Zoo Location on Map:</strong>  </h3><br>
 					<h3>Please Click on the Pinpoint to get the Information about Every Single Zoo of Menagerie Network.</h3><br>
@@ -235,5 +258,115 @@
 				</div>
 			</div>
 		</div>
+        <div id="emptyMap"></div>
+		<script>
+            var zoos = [{
+                "zoo_name": "Battersea",
+                "address" : "Battersea Park Zoo, SW11 4NJ",
+                "postcode": "SW11 4NJ",
+                "phoneno" : "02079245826",
+                "time" : "10:00 - 6:00",
+                "latlong": "51.481402,-0.156565"
+            }, {
+                "zoo_name" : "Bristol",
+                "address" : "Bristol Zoo, BS8 3HA",
+                "postcode": "SW11 4NJ",
+                "phoneno" : "01174285300",
+                "time" : "10:00 - 7:00",
+                "latlong": "51.463763,-2.622540"
+            }, {
+                "zoo_name" : "Edinburgh",
+                "address" : "Edinburgh Zoo, EH12 6TS",
+                "postcode": "EH12 6TS",
+                "phoneno" : "01313349171",
+                "time" : "10:00 - 6:00",
+                "latlong": "55.942175,-3.269330"
+            }, {
+                "zoo_name" : "Hamerton",
+                "address" : "Hamerton Zoo, PE28 5RE",
+                "postcode": "PE28 5RE",
+                "phoneno" : "01832293362",
+                "time" : "09:00 - 05:00",
+                "latlong": "52.409116,-0.329220"
+            }, {
+                "zoo_name" : "London",
+                "address" : "London Zoo, NW1 4RY",
+                "postcode": "NW1 4RY",
+                "phoneno" : "02074496200",
+                "time" : "09:00 - 06:00",
+                "latlong": "51.535288,-0.153430"
+            }];
+            var $table = $("#distanceTable");
+            var $tableBody = $table.find("tbody");
+            var $tableHead = $table.find("thead");
+            var tr = '';
+            var dist = 0;
+
+			$(document).ready(function(){
+			    // Click button for postcode
+                $('#clickForPostcode').on('click', function() {
+                    var $postcodeField = $('#getPostCode');
+
+                    if($postcodeField.val() == '') {
+                        alert('Please enter postcode');
+                        return;
+                    }
+
+                    // REST Location API
+                    $.ajax({
+                        type : 'GET',
+                        dataType: 'jsonp',
+                        jsonp: "jsonp",
+                        url: 'http://dev.virtualearth.net/REST/v1/Locations?postalCode='+$postcodeField.val()+'&key=ApYNd1ObhgY90KbOi7P8dG6jSY6iJ4S9HyE625QfyXM7y8Vbv99DNpeslf1Snf3I',
+                        success: function(response) {
+                            // console.log(response);
+                            // console.log(response.resourceSets[0].resources[0].point.coordinates[0]);
+                            // Code for sorting the database table
+
+                            // Add distance header
+                           // $tableHead.find('tr').append('<th>Distance</th>');
+
+                            $.each(zoos, function(key, value) {
+                                //console.log(value.zoo_name);
+                                // Calculate ditances
+                                var latlong = value.latlong;
+                                var latlong = latlong.split(",");
+
+                                dist = distance(
+                                    latlong[0],
+                                    latlong[1],
+                                    response.resourceSets[0].resources[0].point.coordinates[0],
+                                    response.resourceSets[0].resources[0].point.coordinates[1]);
+
+                                $tableBody.find("tr:eq("+key+")").append("<td>"+dist+"</td>");
+                            });
+                        }
+                    });
+                });
+
+			    $.each(zoos, function(key, value) {
+			        //console.log(value.zoo_name);
+			        tr += '<tr>' +
+								'<td>' + value.zoo_name + '</td>' +
+								'<td>' + value.postcode + '</td>' +
+								'<td>' + value.address + '</td>' +
+								'<td>' + value.latlong + '</td>' +
+                                //'<td>' + value.dist + '</td>' +
+							'</tr>';
+				});
+
+			    $tableBody.append(tr);
+			})
+
+            function distance(lat1, lon1, lat2, lon2) {
+                var p = 0.017453292519943295;    // Math.PI / 180
+                var c = Math.cos;
+                var a = 0.5 - c((lat2 - lat1) * p)/2 +
+                    c(lat1 * p) * c(lat2 * p) *
+                    (1 - c((lon2 - lon1) * p))/2;
+
+                return 12742 * Math.asin(Math.sqrt(a)); // 2 * R; R = 6371 km
+            }
+		</script>
 	</body>
 </html>  
