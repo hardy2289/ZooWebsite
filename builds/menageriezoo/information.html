@@ -2,7 +2,7 @@
 
 <html>
 <head>
-	<script src="http://code.responsivevoice.org/responsivevoice.js"></script>
+	<script src="https://code.responsivevoice.org/responsivevoice.js"></script>
 	<link rel="stylesheet" href="../../css/style.css" type="text/css" />
 	<title>Menagerie Network</title>
 	<script src="js/lib/angular/angular.min.js"></script>
@@ -301,7 +301,7 @@
                         type : 'GET',
                         dataType: 'jsonp',
                         jsonp: "jsonp",
-                        url: 'http://dev.virtualearth.net/REST/v1/Locations?postalCode='+$postcodeField.val()+'&key=ApYNd1ObhgY90KbOi7P8dG6jSY6iJ4S9HyE625QfyXM7y8Vbv99DNpeslf1Snf3I',
+                        url: 'https://dev.virtualearth.net/REST/v1/Locations?postalCode='+$postcodeField.val()+'&key=ApYNd1ObhgY90KbOi7P8dG6jSY6iJ4S9HyE625QfyXM7y8Vbv99DNpeslf1Snf3I',
                         success: function(response) {
                            $tableHead.find('tr').append('<th align="center">Distance (KM)</th>');
                             $.each(zoos, function(key, value) {
