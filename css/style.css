@@ -70,6 +70,30 @@ p a,h4 a{
 	border-color: #666666;
 	background-color: #ffffff;
 }
+/* ---------------------------Table1 -----------------------------*/
+#distanceTable.gridtable {
+	font-family: verdana,arial,sans-serif;
+	font-size:12px;
+	color:#333333;
+	border-width: 1px;
+	border-color: #666666;
+	border-collapse: collapse;
+	background-color: #1B7998;
+}
+#distanceTable.gridtable th {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #666666;
+	background-color: #dedede;
+}
+#distanceTable.gridtable td {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #666666;
+	background-color: #ffffff;
+}
 /*-------------------------	Header --------------------------*/
 #header{
 	font-family: arial;

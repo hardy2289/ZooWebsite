@@ -2,16 +2,7 @@
 
 <html>
 <head>
-
-<style>
-    table.sortable thead {
-        background-color:#eee;
-        color:#666666;
-        font-weight: bold;
-        cursor: default;
-    }
-    </style>
-	<br>
+	<script src="http://code.responsivevoice.org/responsivevoice.js"></script>
 	<link rel="stylesheet" href="../../css/style.css" type="text/css" />
 	<title>Menagerie Network</title>
 	<script src="js/lib/angular/angular.min.js"></script>
@@ -94,6 +85,14 @@
         }
 	</script>
     <script src="js/sorttable.js"></script>
+	<script src="js/tsorter.mini.js"></script>
+	<script>
+	function init() {
+	var sorter = tsorter.create('distanceTable');
+	}
+
+	window.onload = init;
+	</script>
 </head>
 <body>
 <div id="page">
@@ -118,13 +117,9 @@
 
 				<div id ="info">
 				<h1> <center>Welcome to Animal Information Page </center> </h1>
-				<hr><br>
-					<h2><u> Search Animal </u></h2><br><br>
-
-
-
-
-					<h3><strong>List of All the Animals:</strong>  </h3>
+				<hr>
+					<h2><u> Search Animal </u></h2><br>
+					<h3><strong>List of All the Animals:</strong>  </h3>&nbsp;&nbsp;&nbsp;
 					<select id="mySelect">
 						<option value="void">Animal List</option>
 						<option value="Bonobo">Bonobo</option>
@@ -142,7 +137,7 @@
 
 
 							<h3><strong>Search Animal by their Original or Latin name:</strong>  </h3>
-							&nbsp;&nbsp;&nbsp; <input type="text" id="myInput" autofocus>&nbsp;&nbsp;
+							&nbsp;&nbsp;&nbsp; <input type="text" id="myInput" placeholder="Search Animal">&nbsp;&nbsp;
 
 							<button class="btn btn-default" id="checkbtn" onclick="answers()" type="button">Search</button>
 					 <br><br>
@@ -186,33 +181,32 @@
 						<tbody id="table_body2">
 
 						</tbody>
-					</table><br><br>
+					</table><br>
 
+					<h3><strong>Find Nearest Zoo:</strong>  </h3>&nbsp;&nbsp;&nbsp;
 					<input type="input" id="getPostCode" placeholder="Enter Postcode"/>
-                    <button id="clickForPostcode">Search</button>
-					<table id="distanceTable" class="sortable" border="1" width="100%">
+                    <button id="clickForPostcode">Search</button><br><br>
+					<table id="distanceTable" class="sortable gridtable" style="width:100%" border=" 3">
 						<thead>
 							<tr>
-								<td>Zoo Name</td>
-								<td>Zoo Postcode</td>
-								<td>Address</td>
-								<td>Latlong</td>
-                                <td>Distance</td>
+								<td><strong>Zoo Location</strong></td>
+								<td><strong>Address</strong></td>
+
 							</tr>
 						</thead>
 						<tbody>
 
 						</tbody>
-					</table>
+					</table> <br>
 
 					<h3><strong>All Zoo Location on Map:</strong>  </h3><br>
 					<h3>Please Click on the Pinpoint to get the Information about Every Single Zoo of Menagerie Network.</h3><br>
 
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					<center><iframe src="https://www.google.com/maps/d/embed?mid=1dqgZHTNUc0_UuArX3wRnvHs4n-Y" width="650" height="300"></iframe></center>
+					<center><iframe src="https://www.google.com/maps/d/embed?mid=1dqgZHTNUc0_UuArX3wRnvHs4n-Y" width="650" height="250"></iframe></center>
 
-					<br><br><a href="Navigation.html">  <input type="image" src="../../images/Navigation.jpg" ></a>
+					<br><a href="Navigation.html">  <input type="image" src="../../images/Navigation.jpg" ></a>
 
 
 				</div>
@@ -306,57 +300,34 @@
 			    // Click button for postcode
                 $('#clickForPostcode').on('click', function() {
                     var $postcodeField = $('#getPostCode');
-
                     if($postcodeField.val() == '') {
-                        alert('Please enter postcode');
+                        window.alert('Please enter Postcode');
                         return;
-                    }
-
-                    // REST Location API
+                    }// REST Location API
                     $.ajax({
                         type : 'GET',
                         dataType: 'jsonp',
                         jsonp: "jsonp",
                         url: 'http://dev.virtualearth.net/REST/v1/Locations?postalCode='+$postcodeField.val()+'&key=ApYNd1ObhgY90KbOi7P8dG6jSY6iJ4S9HyE625QfyXM7y8Vbv99DNpeslf1Snf3I',
                         success: function(response) {
-                            // console.log(response);
-                            // console.log(response.resourceSets[0].resources[0].point.coordinates[0]);
-                            // Code for sorting the database table
-
-                            // Add distance header
-                           // $tableHead.find('tr').append('<th>Distance</th>');
-
+                           $tableHead.find('tr').append('<th align="center">Distance (KM)</th>');
                             $.each(zoos, function(key, value) {
-                                //console.log(value.zoo_name);
-                                // Calculate ditances
                                 var latlong = value.latlong;
                                 var latlong = latlong.split(",");
-
                                 dist = distance(
                                     latlong[0],
                                     latlong[1],
                                     response.resourceSets[0].resources[0].point.coordinates[0],
                                     response.resourceSets[0].resources[0].point.coordinates[1]);
-
-                                $tableBody.find("tr:eq("+key+")").append("<td>"+dist+"</td>");
-                            });
-                        }
-                    });
-                });
-
+                                $tableBody.find("tr:eq("+key+")").append("<td>"+parseFloat(Math.round(dist * 100) / 100).toFixed(0)+"</td>");
+                            }); } }); });
 			    $.each(zoos, function(key, value) {
 			        //console.log(value.zoo_name);
 			        tr += '<tr>' +
 								'<td>' + value.zoo_name + '</td>' +
-								'<td>' + value.postcode + '</td>' +
 								'<td>' + value.address + '</td>' +
-								'<td>' + value.latlong + '</td>' +
-                                //'<td>' + value.dist + '</td>' +
-							'</tr>';
-				});
-
-			    $tableBody.append(tr);
-			})
+							'</tr>';  });
+			    $tableBody.append(tr); })
 
             function distance(lat1, lon1, lat2, lon2) {
                 var p = 0.017453292519943295;    // Math.PI / 180
@@ -368,5 +339,7 @@
                 return 12742 * Math.asin(Math.sqrt(a)); // 2 * R; R = 6371 km
             }
 		</script>
+
+<script src="js/ResponsiveVoice.js"></script>
 	</body>
 </html>  

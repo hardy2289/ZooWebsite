@@ -350,7 +350,7 @@ function answers() {
 
             var firstRow = document.getElementById("table").rows[0];
             var x = firstRow.insertCell(+3);
-            x.innerHTML = "<img src='https://s-media-cache-ak0.pinimg.com/originals/13/de/b9/13deb9e8f9dcc7ad5677289da25c0e5e.jpg' height='120' width='120' alt='hello'/>";
+            x.innerHTML = "<img src='http://www.world-walk-about.com/wp-content/uploads/2013/03/DSC1834-copy-1024x792.jpg?12d7ef' height='120' width='120' alt='hello'/>";
 
             $("#table_body3").append("<tr><td>" + description + "</td><td>"+ continent+"</td><td>"+ country+"</td><td>"+"Tiger Image" +"</td><tr>")
             $("#table_body").append("<tr><td>" + originalname + "</td><td>" + latinname + "</td><td>" + order1 + "</td><td>" + family + "</td><td>" + genus + "</td><td>" + species + "</td></tr>")
@@ -388,7 +388,7 @@ function answers() {
 
             var firstRow = document.getElementById("table").rows[0];
             var x = firstRow.insertCell(+3  );
-            x.innerHTML = "<img src='http://www.airlive.net/wp-content/uploads/2016/05/138292-425x282-Baby_turtle.jpg' height='120' width='120' alt='hello'/>";
+            x.innerHTML = "<img src='http://www.lausd.k12.ca.us/Fleming_MS/students/DTBS/Kelvin/Graphics/turtle.jpg' height='120' width='120' alt='hello'/>";
 
 
             $("#table_body3").append("<tr><td>" + description + "</td><td>"+ continent+"</td><td>"+ country+"</td><td>"+"Turtle Image" +"</td><tr>")
