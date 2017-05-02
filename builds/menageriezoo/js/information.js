@@ -81,7 +81,7 @@ function answers() {
 
             var firstRow = document.getElementById("table").rows[0];
             var x = firstRow.insertCell(+3);
-            x.innerHTML = "<img src='https://animals.sandiegozoo.org/sites/default/files/2016-10/bonobo_portrait.jpg' height='120' width='120' alt='hello'/>";
+            x.innerHTML = "<img src='https://s-media-cache-ak0.pinimg.com/736x/45/dd/df/45dddf6d5b1170144b6d526e1489f3a7.jpg' height='120' width='120' alt='hello'/>";
 
             $("#table_body3").append("<tr><td>" + description + "</td><td>"+ continent+"</td><td>"+ country+"</td><td>"+"Bonobo Image" +"</td><tr>")
             $("#table_body").append("<tr><td>" + originalname + "</td><td>" + latinname + "</td><td>" + order1 + "</td><td>" + family + "</td><td>" + genus + "</td><td>" + species + "</td></tr>")
@@ -312,7 +312,7 @@ function answers() {
 
             var firstRow = document.getElementById("table").rows[0];
             var x = firstRow.insertCell(+3);
-            x.innerHTML = "<img src='https://images.dailystar.co.uk/dynamic/1/photos/611000/53611.jpg' height='120' width='120' alt='hello'/>";
+            x.innerHTML = "<img src='https://pbs.twimg.com/media/C9LxqLKUIAIC127.jpg' height='120' width='120' alt='hello'/>";
 
             $("#table_body3").append("<tr><td>" + description + "</td><td>"+ continent+"</td><td>"+ country+"</td><td>"+"Python Image" +"</td><tr>")
             $("#table_body").append("<tr><td>" + originalname + "</td><td>" + latinname + "</td><td>" + order1 + "</td><td>" + family + "</td><td>" + genus + "</td><td>" + species + "</td></tr>")
@@ -350,7 +350,7 @@ function answers() {
 
             var firstRow = document.getElementById("table").rows[0];
             var x = firstRow.insertCell(+3);
-            x.innerHTML = "<img src='https://www.world-walk-about.com/wp-content/uploads/2013/03/DSC1834-copy-1024x792.jpg?12d7ef' height='120' width='120' alt='hello'/>";
+            x.innerHTML = "<img src='https://s-media-cache-ak0.pinimg.com/736x/1f/3a/de/1f3ade21cdd8db46ed31534a11647f73.jpg' height='120' width='120' alt='hello'/>";
 
             $("#table_body3").append("<tr><td>" + description + "</td><td>"+ continent+"</td><td>"+ country+"</td><td>"+"Tiger Image" +"</td><tr>")
             $("#table_body").append("<tr><td>" + originalname + "</td><td>" + latinname + "</td><td>" + order1 + "</td><td>" + family + "</td><td>" + genus + "</td><td>" + species + "</td></tr>")
@@ -388,7 +388,7 @@ function answers() {
 
             var firstRow = document.getElementById("table").rows[0];
             var x = firstRow.insertCell(+3  );
-            x.innerHTML = "<img src='https://www.lausd.k12.ca.us/Fleming_MS/students/DTBS/Kelvin/Graphics/turtle.jpg' height='120' width='120' alt='hello'/>";
+            x.innerHTML = "<img src='https://www.cdc.gov/media/dpk/food-safety/salmonella-turtles/images/dpk-salmonella-red-eared-slider-turtle-lg.jpg' height='120' width='120' alt='hello'/>";
 
 
             $("#table_body3").append("<tr><td>" + description + "</td><td>"+ continent+"</td><td>"+ country+"</td><td>"+"Turtle Image" +"</td><tr>")

@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7a5491d4-5bc5-4984-8208-697a24dab539" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/builds/menageriezoo/js/information.js" afterPath="$PROJECT_DIR$/builds/menageriezoo/js/information.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,8 +22,8 @@
       <file leaf-file-name="information.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/builds/menageriezoo/information.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="97" column="70" lean-forward="true" selection-start-line="97" selection-start-column="12" selection-end-line="97" selection-end-column="70" />
+            <state relative-caret-position="319">
+              <caret line="104" column="0" lean-forward="true" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#table#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#table#3;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -34,8 +35,8 @@
       <file leaf-file-name="information.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/builds/menageriezoo/js/information.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6698">
-              <caret line="394" column="59" lean-forward="false" selection-start-line="394" selection-start-column="59" selection-end-line="394" selection-end-column="59" />
+            <state relative-caret-position="289">
+              <caret line="308" column="56" lean-forward="false" selection-start-line="308" selection-start-column="55" selection-end-line="308" selection-end-column="56" />
               <folding />
             </state>
           </provider>
@@ -64,8 +65,8 @@
       <file leaf-file-name="Navigation.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/builds/menageriezoo/Navigation.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="89" column="70" lean-forward="false" selection-start-line="89" selection-start-column="70" selection-end-line="89" selection-end-column="70" />
+            <state relative-caret-position="127">
+              <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -822,16 +823,16 @@
       <workItem from="1493509452148" duration="11748000" />
       <workItem from="1493598259870" duration="2075000" />
       <workItem from="1493604184392" duration="2352000" />
-      <workItem from="1493652756015" duration="8237000" />
+      <workItem from="1493652756015" duration="10623000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="220145000" />
+    <option name="totallyTimeSpent" value="222531000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1356" height="735" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1214,14 +1215,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/builds/menageriezoo/js/information.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6698">
-          <caret line="394" column="59" lean-forward="false" selection-start-line="394" selection-start-column="59" selection-end-line="394" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/builds/menageriezoo/js/javascript.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="665">
@@ -1230,10 +1223,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/builds/menageriezoo/js/information.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="308" column="56" lean-forward="false" selection-start-line="308" selection-start-column="55" selection-end-line="308" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/builds/menageriezoo/information.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="97" column="70" lean-forward="true" selection-start-line="97" selection-start-column="12" selection-end-line="97" selection-end-column="70" />
+        <state relative-caret-position="319">
+          <caret line="104" column="0" lean-forward="true" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#table#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#table#3;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1243,8 +1244,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/builds/menageriezoo/Navigation.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="89" column="70" lean-forward="false" selection-start-line="89" selection-start-column="70" selection-end-line="89" selection-end-column="70" />
+        <state relative-caret-position="127">
+          <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
           <folding />
         </state>
       </provider>
